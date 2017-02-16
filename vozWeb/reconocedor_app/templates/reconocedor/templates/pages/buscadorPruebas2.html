@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+{% extends "reconocedor/templates/pages/base2.html" %}
+
+{% load staticfiles %}
+
+{% block content %} 
+
+<div id="cuerpo">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6" style="float:right">
+				<div class="row">
+					<div id="bocadillo" class="bubble pull-right" style="background: #B0C4DE; border-color: #B0C4DE; visibility:hidden;font-size:14pt"> 
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6" style="float:left">
+				<div id="avatar">
+					<video loop id="Video1" >
+			     	<source src="{% static 'videos/avatar.mp4' %}" type="video/mp4" muted/>
+			    	</video>
+			  	</div>
+			</div>
+		</div>
+	</div>	
+	
+	<div id="search" style="visibility:visible;">
+		<input id="buscador" type="text" class="speech-input">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="{% static 'js/voiceText2.js'%}"></script>
+		<script src="{% static 'js/video.js'%}"></script>
+		<script src="{% static 'js/index.js'%}"></script>
+		<script>
+		</script>
+		
+	</div>
+	
+	
+	<div id="hablador">
+		<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+		<script type="text/javascript">  
+			var div = document.getElementById("consultaarriba");  
+			var texto = div.textContent;
+		</script>
+	</div>
+
+	<div>
+
+		<table class="table-formacion" id="tablaOfertasEmpleo">
+			<thead>
+				<tr>
+					<!--<th>&nbsp;</th>-->
+					<th>Titulo</th>
+					<th>Descripcion</th>
+					<th>Requirimientos</th>
+				</tr>
+			</thead>
+
+		</table>
+		<script type="text/javascript">
+
+			$("#bocadillo").change(function() {		
+				var filtros = {};
+				var java ="java";
+				$(".typeText").each(function(index) {
+					filtros[$(this).attr("name")] = $(this).val();
+				});
+				if (document.getElementById("bocadillo").innerHTML != "")
+				{
+					$("#tablaOfertasEmpleo").dataTable({
+						"processing" : true,
+						"serverSide" : true,
+						"pageLength" : 10,
+						"ajax" : {
+							type : "POST",
+							url : '/vozWeb/getResultsAjax/?transcription=' + java,
+							data : filtros,
+							async : false
+						},
+						"columnDefs" : [ {
+							orderable : false,
+							targets : [ 0 ]
+						} ],
+						"columns" : [ 
+							<!--{ data : "icono" },--> 
+							{ data : "title"  }, 
+							{ data : "description"  }, 
+							{ data : "requeriments"} 
+						],
+					});
+				}
+				else
+				{
+					alert("Ahora el bocadillo no tiene texto");
+				}
+			});
+		</script>
+	</div>
+	<div id="DestinoTabla">
+		
+	</div>
+
+</div>
+
+{% endblock content %} 

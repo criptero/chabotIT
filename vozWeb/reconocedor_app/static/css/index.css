@@ -1,0 +1,33 @@
+html,body{
+	margin:0px;
+	height:100%;
+	background: black;
+}
+
+#pageWrapper{
+	height:100%;
+}
+
+#siriWave{
+    height: 60px;	
+}
+
+#containerMicro{
+	height: 100%;
+}
+
+#containerGen{
+	height: calc(100% - 100px);
+}
+
+#containerResults{
+
+}
+
+#microCont{
+	height: 140px;
+    width: 140px;
+    margin: 0px auto;
+    position: relative;
+	top: calc(50% - 50px);
+}

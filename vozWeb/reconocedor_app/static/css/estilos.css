@@ -1,0 +1,206 @@
+BODY {
+	MARGIN: 2px 0px 0px;
+	FONT-FAMILY: Trebuchet ms, Arial, Helvetica, Sans-serif;
+	COLOR: #666666;
+	FONT-SIZE: 13px
+}
+
+.btn-refrescar-kaptcha {
+	background-image: url(../imagenes/botonKaptcha.png);
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px; 
+	/**padding-top:4px;**/
+	cursor: pointer;
+	border: 0;
+	color: #000000;
+}
+.captcha{
+	display: inline-block;
+	float: left;
+}
+.estiloCaptcha{
+	padding-bottom: 70px;
+}
+.recargarCaptchaBoton{
+	padding-right: 0.5em;
+	margin-top: 1em;
+	float: left;
+	display: inline-block;
+}
+.divCaptcha{
+	margin-left: 32em;
+}
+.captchaAcceso {
+	margin-bottom: 1em;
+	padding: 1em;
+}
+.captchaAcceso .divCaptcha{
+	margin-left: 5em;
+}
+
+#contenedor {
+	BORDER-BOTTOM: #e4e4e4 1px solid;
+	BORDER-LEFT: #e4e4e4 1px solid;
+	PADDING-BOTTOM: 5px;
+	MARGIN: auto;
+	MIN-HEIGHT: 700px;
+	PADDING-LEFT: 5px;
+	WIDTH: 700px;
+	PADDING-RIGHT: 5px;
+	BORDER-TOP: #e4e4e4 1px solid;
+	BORDER-RIGHT: #e4e4e4 1px solid;
+	PADDING-TOP: 5px
+}
+
+#cabecera {
+	BORDER-BOTTOM: #e4e4e4 1px solid;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px 0px 12px 1px;
+	PADDING-LEFT: 0px;
+	WIDTH: 690px;
+	PADDING-RIGHT: 0px;
+	HEIGHT: 120px;
+	PADDING-TOP: 0px
+}
+
+#pie {
+	BORDER-BOTTOM: #e4e4e4 1px solid;
+	TEXT-ALIGN: right;
+	BORDER-LEFT: #e4e4e4 1px solid;
+	PADDING-BOTTOM: 5px;
+	MARGIN: auto;
+	PADDING-LEFT: 5px;
+	WIDTH: 700px;
+	PADDING-RIGHT: 5px;
+	BORDER-RIGHT: #e4e4e4 1px solid;
+	PADDING-TOP: 5px
+}
+
+#formulario {
+	FLOAT: left;
+	PADDING: 5px; 
+	MARGIN: 120px;	
+}
+
+.tabla_listado {
+	BORDER-BOTTOM: #d4d6cf 1px solid;
+	BORDER-LEFT: #d4d6cf 1px solid;
+	BORDER-TOP: #d4d6cf 1px solid;
+	BORDER-RIGHT: #d4d6cf 1px solid
+}
+
+.fondo_cabecera {
+	BACKGROUND-IMAGE: url(../imagenes/cabeceraTabla6.gif);
+	HEIGHT: 25px
+}
+
+.impar {
+	BACKGROUND-COLOR: #ffffff
+}
+
+.par {
+	BACKGROUND-COLOR: #ebecee
+}
+
+.resaltada {
+	BACKGROUND-COLOR: #cccccc
+}
+
+.estilo1 {
+	font-size: 10pt;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.textoAutorizacion {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #666666;
+}
+.campoTexto {
+	font-family: Arial, Helvetica, sans-serif;
+	border: thin solid #999999;
+}
+.tituloSeccion {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 19px;
+	color: #999999;
+	font-weight: normal;
+	font-variant: normal;
+}
+.titulo1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 19px;
+	color: #999999;
+	font-weight: normal;
+	font-variant: normal;
+}
+.Estilo2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-size: 12px;
+}
+
+form.formulario fieldset {
+	border: 0;
+	padding-bottom: 30px;
+}
+
+form.formulario hr{
+	width: 90%;
+	color: silver;
+}
+
+.bloqueCamposLabelSuperior
+{
+	display: block;
+	width: auto;
+	float: left;
+}
+
+form.formulario fieldset div.identacion{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-left: 25px;
+}
+
+form.formulario fieldset div {
+	display: block;
+	margin: 0 0;
+	padding: .2em .5em;
+	text-align: left
+}
+
+/* camposEnLinea:etiqueta encima del campo */
+form.formulario fieldset div.camposEnBloque {
+	display: block;
+	float: none
+}
+
+/* camposEnColumna:bloques de campos en varias columnas (tipo fecha,num de cuenta,etc) */
+form.formulario fieldset div.camposEnColumna {
+	display: block;
+	overflow: hidden;
+	width: 98%;
+	clear: both
+}
+
+form.formulario fieldset div.camposEnColumna div.camposEnBloque {
+	float: left;
+	margin-right: 5px;
+	width: auto
+}
+
+form.formulario fieldset div.camposEnColumna div.camposEnBloque label {
+	width: auto;
+}
+
+form.formulario div.botonera {
+	display: block;
+	height: 50px;
+}
+
+.wp1 {width:1% !important} .wp3 {width:3% !important} .wp4 {width:4% !important}  .wp5 {width:5% !important}.wp7 {width:7% !important}.wp8 {width:8% !important}.wp9 {width:9% !important} 
+.wp10 {width:10% !important}.wp12 {width:12% !important}.wp13 {width:13% !important}.wp15 {width:15% !important}.wp17 {width:17% !important}.wp20 {width:20% !important}
+.wp25 {width:25% !important}.wp27 {width:27% !important}.wp29 {width:29% !important}.wp30 {width:30% !important}.wp35 {width:35% !important}.wp37 {width:37% !important}.wp40 {width:40% !important;}
+.wp45 {width:45% !important}.wp47 {width:47% !important}.wp48 {width:48% !important}.wp49 {width:49% !important}.wp50 {width:50% !important}.wp55 {width:55% !important}.wp56 {width:56% !important}.wp60 {width:60% !important}.wp65 {width:65% !important}.wp70 {width:70% !important}.wp75 {width:75% !important}.wp80 {width:80% !important}.wp85 {width:85% !important}.wp90 {width:90% !important}.wp92 {width:92% !important}.wp925 {width:92.5% !important}.wp94 {width:94%; !important}.wp95 {width:95% !important}.wp955 {width:95.5% !important}.wp96 {width:96% !important}

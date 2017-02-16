@@ -1,0 +1,47 @@
+{% extends "reconocedor/templates/pages/base.html" %}
+
+{% load staticfiles %}
+
+{% block content %} 
+
+<div id="cuerpo">
+	<div id="bocadillo" class="bubble" style="background: #B0C4DE; border-color: #B0C4DE; display : none;font-size:14pt">
+	</div>
+	<div id="avatar_bocadillo">
+		<div id="avatar">
+			<video loop id="Video1" >
+	     		<source src="{% static 'videos/avatar.mp4' %}" type="video/mp4" muted/>
+	    	</video>
+
+	  	</div>
+	<div id="loader"></div>
+	</div>	
+	
+	<div id="search">
+		<input id="buscador" type="text" class="speech-input">
+		<link rel="stylesheet" href="{%static 'css/dataTables.jqueryui.min.css'%}" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="{% static 'js/voiceText.js'%}"></script>
+		<script src="{% static 'js/video.js'%}"></script>
+		<script src="{% static 'js/index.js'%}"></script>
+		<script src="{% static 'js/jquery.dataTables.js'%}"></script>
+		<script type="text/javascript" src="{% static 'js/dataTables.jqueryui.min.js'%}"></script>
+		<script>
+		</script>
+		
+	</div>
+	
+	
+	<div id="hablador">
+		<script src='https://code.responsivevoice.org/responsivevoice.js'></script>	
+	</div>
+
+	<div id="tabla">
+
+		<table id="data_table" class="display" cellspacing="0" width="100%"></table>
+	</div>
+
+
+</div>
+
+{% endblock content %} 

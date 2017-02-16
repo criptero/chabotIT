@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<title> TexToVoice </title>
+	
+	<h1> Paso de texto a voz</h1>
+	
+	<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+	
+	<script>
+		<!-- var texto = ("input[name = text]").val(); -->
+		var texto = "En estos momentos no se encuentra disponible esta aplicacion";
+	</script>
+	
+	<input onclick='responsiveVoice.speak(texto, "Spanish Female");' type='button' value='Play' />
+	<input onclick='responsiveVoice.cancel();' type ='button' value = 'Stop'/>
+	<input onclick='responsiveVoice.pause();' type ='button' value = 'Pause'/>
+	<input onclick='responsiveVoice.resume();' type ='button' value = 'Resume'/>
+
+</html>

@@ -1,0 +1,11 @@
+.ui-widget-content{
+	background: #fff 50% top repeat-x;
+}
+
+.ui-dialog-titlebar{
+	background: #064d89;
+}
+
+.ui-widget-header{
+	border: 1px solid #064d89;
+}

@@ -1,0 +1,3851 @@
+@charset "CP850";
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+/* line 17, ../../app/sass/layout/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, ../../app/sass/layout/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 32, ../../app/sass/layout/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 36, ../../app/sass/layout/_reset.scss */
+ul {
+  list-style: none;
+}
+
+/* line 40, ../../app/sass/layout/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 45, ../../app/sass/layout/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 50, ../../app/sass/layout/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 55, ../../app/sass/layout/_reset.scss */
+a {
+  text-decoration: none;
+}
+
+/*******************************
+************** GRID ************
+********************************/
+/*******************************
+***********FIN GRID*************
+********************************/
+/*******************************
+***********COMPASS**************
+********************************/
+/*******************************
+****** VARIABLES GLOBALES ******
+********************************/
+/******* FUENTES ***********/
+/******* SIZE ***********/
+/******* COLORS ***********/
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url(../fonts/OpenSans.woff) format("woff");
+}
+
+/****************************
+	MIXINS
+*****************************/
+/*Mixin que asigna una imagen de sprite con compass*/
+/*Mixin para a¤adir los prefijos a la propiedad calc*/
+/****************************
+	FUNCTIONS
+*****************************/
+/****************************
+  MIXINS PARA QUE LAS MEDIDAS SE ESTABLEZCAN PRIMERO EN PX Y LUEGO EN REM
+*****************************/
+/*Font Size*/
+/*Line Height*/
+/* ==========================================================================
+/* 2.0 - Grid Layout (Responsive)
+   ========================================================================== */
+/* Sections & Content Blocks */
+/* line 5, ../../app/sass/layout/_grids.scss */
+.section {
+  position: relative;
+}
+
+/* line 7, ../../app/sass/layout/_grids.scss */
+.center, .container, .container-full {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 12, ../../app/sass/layout/_grids.scss */
+.container {
+  max-width: 940px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 18, ../../app/sass/layout/_grids.scss */
+.container-full {
+  max-width: 960px;
+}
+
+/* Fluid Grid */
+/* line 24, ../../app/sass/layout/_grids.scss */
+.col, .relevants, .relevants .relevant, .aside, .download_area, .twitter_area, .faq {
+  margin-left: 2%;
+  float: left;
+}
+
+/* line 28, ../../app/sass/layout/_grids.scss */
+.col:first-child, .relevants:first-child, .relevants .relevant:first-child, .aside:first-child, .download_area:first-child, .twitter_area:first-child, .faq:first-child, .first-col, .relevants .relevant.first, .first-colh {
+  margin-left: 0;
+}
+
+/* Columns */
+/* line 31, ../../app/sass/layout/_grids.scss */
+.cl_1 {
+  width: 6.5%;
+}
+
+/* line 32, ../../app/sass/layout/_grids.scss */
+.cl_2 {
+  width: 15%;
+}
+
+/* line 33, ../../app/sass/layout/_grids.scss */
+.cl_3, .quarter {
+  width: 23.5%;
+}
+
+/* line 34, ../../app/sass/layout/_grids.scss */
+.cl_4, .one-third, .aside {
+  width: 32%;
+}
+
+/* line 35, ../../app/sass/layout/_grids.scss */
+.cl_5 {
+  width: 40.5%;
+}
+
+/* line 35, ../../app/sass/layout/_grids.scss */
+.cl_5_1 {
+  width: 50.5%;
+}
+
+/* line 36, ../../app/sass/layout/_grids.scss */
+.cl_6, .half, .relevants .relevant {
+  width: 49.0%;
+}
+
+.relevants .relevant {
+  width: 32.0%;
+}
+
+/* line 37, ../../app/sass/layout/_grids.scss */
+.cl_7 {
+  width: 57.5%;
+}
+
+/* line 37, ../../app/sass/layout/_grids.scss */
+.cl_7_1 {
+  width: 50.5%;
+}
+
+/* line 38, ../../app/sass/layout/_grids.scss */
+.cl_8 {
+  width: 66%;
+}
+
+.relevants{
+	width: 99%;
+}
+
+/* line 39, ../../app/sass/layout/_grids.scss */
+.cl_9 {
+  width: 74.5%;
+}
+
+/* line 40, ../../app/sass/layout/_grids.scss */
+.cl_10 {
+  width: 83%;
+}
+
+/* line 41, ../../app/sass/layout/_grids.scss */
+.cl_11 {
+  width: 91.5%;
+}
+
+/* line 42, ../../app/sass/layout/_grids.scss */
+.cl_12, .twitter_area {
+  width: 100%;
+}
+
+/* ==========================================================================
+/* -- Tablet Devices (Layout, Modifications, etc)
+   ========================================================================== */
+@media only screen and (min-device-width: 768px) and (max-device-width: 963px) and (orientation: portrait), only screen and (min-width: 768px) and (max-width: 963px) {
+  /* line 52, ../../app/sass/layout/_grids.scss */
+  .container, .tablet-container {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Tablet Grid
+  * For stacking full width columns, please use the new class .tablet-full */
+  /* line 60, ../../app/sass/layout/_grids.scss */
+  .cl_t_1 {
+    width: 6.5%;
+  }
+
+  /* line 61, ../../app/sass/layout/_grids.scss */
+  .cl_t_2 {
+    width: 15%;
+  }
+
+  /* line 62, ../../app/sass/layout/_grids.scss */
+  .cl_t_3 {
+    width: 23.5%;
+  }
+
+  /* line 63, ../../app/sass/layout/_grids.scss */
+  .cl_t_4 {
+    width: 32%;
+  }
+
+  /* line 64, ../../app/sass/layout/_grids.scss */
+  .cl_t_5, .relevants .relevant, .twitter_area {
+    width: 40.5%;
+  }
+
+  /* line 65, ../../app/sass/layout/_grids.scss */
+  .cl_t_5_5, .download_area {
+    width: 45.5%;
+  }
+
+  /* line 66, ../../app/sass/layout/_grids.scss */
+  .cl_t_6 {
+    width: 49.0%;
+  }
+
+  /* line 67, ../../app/sass/layout/_grids.scss */
+  .cl_t_7 {
+    width: 57.5%;
+  }
+
+  /* line 68, ../../app/sass/layout/_grids.scss */
+  .cl_t_8 {
+    width: 66%;
+  }
+
+  /* line 69, ../../app/sass/layout/_grids.scss */
+  .cl_t_9 {
+    width: 74.5%;
+  }
+
+  /* line 70, ../../app/sass/layout/_grids.scss */
+  .cl_t_10 {
+    width: 83%;
+  }
+
+  /* line 71, ../../app/sass/layout/_grids.scss */
+  .cl_t_11 {
+    width: 91.5%;
+  }
+
+  /* line 72, ../../app/sass/layout/_grids.scss */
+  .cl_t_12, .relevants, .aside, .faq {
+    width: 100%;
+  }
+
+  /* line 74, ../../app/sass/layout/_grids.scss */
+  .cl_t-full {
+    clear: both;
+    float: none;
+    width: 100%;
+    margin: 10px 0 0 0;
+    display: block;
+  }
+
+  /* line 81, ../../app/sass/layout/_grids.scss */
+  .cl_t-full:first-child {
+    margin-top: 0;
+  }
+
+  /* line 84, ../../app/sass/layout/_grids.scss */
+  .cl_t-first-col {
+    margin-left: 0;
+  }
+
+  /* line 85, ../../app/sass/layout/_grids.scss */
+  .cl_t-center {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+
+  /* line 90, ../../app/sass/layout/_grids.scss */
+  .cl_t-left {
+    float: left;
+  }
+
+  /* line 91, ../../app/sass/layout/_grids.scss */
+  .cl_t-right {
+    float: right;
+  }
+
+  /* line 92, ../../app/sass/layout/_grids.scss */
+  .cl_t-no-float {
+    float: none;
+  }
+
+  /* line 94, ../../app/sass/layout/_grids.scss */
+  .cl_t-center:first-child {
+    margin-left: auto;
+  }
+
+  /* line 95, ../../app/sass/layout/_grids.scss */
+  .cl_t-center-text {
+    text-align: center;
+  }
+}
+/* ==========================================================================
+/* -- Mobile Devices (Layout, Modifications, etc)
+   ========================================================================== */
+@media only screen and (max-device-width: 320px), only screen and (max-width: 767px) {
+  /* Mobile Grid
+  * For stacking full width columns, please use the new class .mobile-full */
+  /* line 107, ../../app/sass/layout/_grids.scss */
+  .cl_m_1 {
+    width: 6.5%;
+  }
+
+  /* line 108, ../../app/sass/layout/_grids.scss */
+  .cl_m_2 {
+    width: 15%;
+  }
+
+  /* line 109, ../../app/sass/layout/_grids.scss */
+  .cl_m_3 {
+    width: 23.5%;
+  }
+
+  /* line 110, ../../app/sass/layout/_grids.scss */
+  .cl_m_4 {
+    width: 32%;
+  }
+
+  /* line 111, ../../app/sass/layout/_grids.scss */
+  .cl_m_5 {
+    width: 40.5%;
+  }
+
+  /* line 112, ../../app/sass/layout/_grids.scss */
+  .cl_m_6 {
+    width: 49.0%;
+  }
+
+  /* line 113, ../../app/sass/layout/_grids.scss */
+  .cl_m_7 {
+    width: 57.5%;
+  }
+
+  /* line 114, ../../app/sass/layout/_grids.scss */
+  .cl_m_8 {
+    width: 66%;
+  }
+
+  /* line 115, ../../app/sass/layout/_grids.scss */
+  .cl_m_9 {
+    width: 74.5%;
+  }
+
+  /* line 116, ../../app/sass/layout/_grids.scss */
+  .cl_m_10 {
+    width: 83%;
+  }
+
+  /* line 117, ../../app/sass/layout/_grids.scss */
+  .cl_m_11 {
+    width: 91.5%;
+  }
+
+  /* line 118, ../../app/sass/layout/_grids.scss */
+  .cl_m_12, .relevants, .relevants .relevant, .aside, .download_area, .twitter_area, .faq {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* line 120, ../../app/sass/layout/_grids.scss */
+  .cl_m-full {
+    clear: both;
+    float: none;
+    width: 100%;
+    margin: 10px 0 0 0;
+    display: block;
+  }
+
+  /* line 127, ../../app/sass/layout/_grids.scss */
+  .cl_m-full:first-child {
+    margin-top: 0;
+  }
+
+  /* line 130, ../../app/sass/layout/_grids.scss */
+  .cl_m-center {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+
+  /* line 135, ../../app/sass/layout/_grids.scss */
+  .cl_m-center:first-child {
+    margin-left: auto;
+  }
+
+  /* line 136, ../../app/sass/layout/_grids.scss */
+  .cl_m-center-text {
+    text-align: center;
+  }
+
+  /* line 139, ../../app/sass/layout/_grids.scss */
+  .cl_m-left {
+    float: left;
+  }
+
+  /* line 140, ../../app/sass/layout/_grids.scss */
+  .cl_m-right {
+    float: right;
+  }
+
+  /* line 141, ../../app/sass/layout/_grids.scss */
+  .cl_m-no-float {
+    float: none;
+  }
+
+  /* line 143, ../../app/sass/layout/_grids.scss */
+  .container, .cl_m-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/*****************************************************************************************************
+ * LAYOUT
+ ****************************************************************************************************/
+/* line 4, ../../app/sass/layout/_layout.scss */
+html {
+  height: 100%;
+}
+
+/* line 5, ../../app/sass/layout/_layout.scss */
+body {
+  font-size: 62.5%;
+  margin: 0;
+  height: 100%;
+}
+
+/* line 12, ../../app/sass/layout/_layout.scss */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 13, ../../app/sass/layout/_layout.scss */
+.strongBold {
+  font-weight: bold;
+}
+
+/* line 15, ../../app/sass/layout/_layout.scss */
+.disNone {
+  display: none;
+}
+
+/* line 16, ../../app/sass/layout/_layout.scss */
+.disBlo {
+  display: block;
+}
+
+/* line 17, ../../app/sass/layout/_layout.scss */
+.accesibilidad {
+  position: absolute !important;
+  left: -9999em;
+  width: 0.0625em;
+  height: 0.0625em;
+  overflow: hidden;
+  margin: 0em;
+  padding: 0em;
+  line-height: 0em;
+}
+
+/* line 19, ../../app/sass/layout/_layout.scss */
+.ftl {
+  float: left;
+}
+
+/* line 20, ../../app/sass/layout/_layout.scss */
+.ftr {
+  float: right;
+}
+
+.centrado {
+	margin-left: 46%;
+}
+
+/* line 22, ../../app/sass/layout/_layout.scss */
+.foco {
+  display: inline-block;
+}
+
+/* line 24, ../../app/sass/layout/_layout.scss */
+.centrar_texto {
+  text-align: center;
+}
+
+/* line 26, ../../app/sass/layout/_layout.scss */
+.elemento_centrado {
+  margin: 0 auto;
+}
+/* line 28, ../../app/sass/layout/_layout.scss */
+.elemento_centrado.tipo1 {
+  width: 11em;
+}
+/* line 31, ../../app/sass/layout/_layout.scss */
+.elemento_centrado.tipo2 {
+  width: 106px;
+  height: 84px;
+}
+
+/* line 36, ../../app/sass/layout/_layout.scss */
+.focoAccesible {
+  outline: 2px solid #003b89 !important;
+}
+
+/* line 40, ../../app/sass/layout/_layout.scss */
+a:focus, input:focus {
+  outline: 0px solid #003b89;
+}
+
+/* line 42, ../../app/sass/layout/_layout.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 43, ../../app/sass/layout/_layout.scss */
+strong {
+  font-weight: normal;
+}
+
+/* line 45, ../../app/sass/layout/_layout.scss */
+ul.lista_punto li {
+  background: url(../imagenes/img/lista_punto.png) no-repeat 0 4px;
+  padding-left: 14px;
+}
+
+ol.lista_numeros {
+  list-style-type: decimal !important;
+  padding-left: 14px;
+}
+
+.sin_padding {
+	padding: 0em 0em 0.6em 0em !important;
+}
+
+/* line 49, ../../app/sass/layout/_layout.scss */
+.padding_top0_1 {
+  padding-top: 0.1em;
+}
+
+/* line 50, ../../app/sass/layout/_layout.scss */
+.padding_top1 {
+  padding-top: 1em;
+}
+
+/* line 51, ../../app/sass/layout/_layout.scss */
+.padding_top1_5 {
+  padding-top: 1.5em;
+}
+
+/* line 52, ../../app/sass/layout/_layout.scss */
+.padding_bottom0_5 {
+  padding-bottom: 0.5em;
+}
+
+/* line 53, ../../app/sass/layout/_layout.scss */
+.padding_bottom1 {
+  padding-bottom: 1em;
+}
+
+/* line 54, ../../app/sass/layout/_layout.scss */
+.margin_left1_8 {
+  margin-left: 1.8em;
+}
+
+/* line 55, ../../app/sass/layout/_layout.scss */
+.margin_top1 {
+  margin-top: 1em;
+}
+
+/* line 56, ../../app/sass/layout/_layout.scss */
+.margin_bottom1 {
+  margin-bottom: 1em;
+}
+
+/* line 59, ../../app/sass/layout/_layout.scss */
+.linea {
+  display: block;
+  border-top: solid 3px #cccccc;
+}
+
+/* line 60, ../../app/sass/layout/_layout.scss */
+.linea2 {
+  display: block;
+  border-top: solid 1px #cccccc;
+}
+
+/* line 61, ../../app/sass/layout/_layout.scss */
+.linea3 {
+  display: block;
+  border-top: solid 1px #659bc6;
+}
+
+/* line 65, ../../app/sass/layout/_layout.scss */
+.wrapper, .wrapper_header, .wrapper_bg_img, .wrapper_main,
+.wrapper_main_steps, .wrapper_main_evolution, .wrapper_footer_contact,
+.wrapper_ejemplosKps, .wrapper_footer, .wrapper_carousel {
+  float: none;
+  display: block;
+  clear: both;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+/* line 69, ../../app/sass/layout/_layout.scss */
+.header, .main, .bg_img, .main_steps, .main_evolution, .main_ejemplosKps, .footer_contact,
+.header_idioma, .header_logo, .footer, .carousel {
+  float: none;
+  display: block;
+  clear: both;
+  margin: 0 auto;
+  padding: 0;
+  width: 940px;
+}
+
+.main_header {
+  float: none;
+  display: block;
+  clear: both;
+  margin: 0 auto;
+  padding: 0;
+  width: 95%;
+}
+
+/*****************************************************************************************************
+ * CONTENIDOS
+ ****************************************************************************************************/
+/* line 5, ../../app/sass/layout/_mixins.scss */
+.main:after, .main_steps:after, .main_ejemplosKps:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+/* line 76, ../../app/sass/layout/_layout.scss */
+.main a, .main_steps a, .main_ejemplosKps a {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #00b0ca;
+}
+
+/* line 5, ../../app/sass/layout/_mixins.scss */
+.row:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* line 82, ../../app/sass/layout/_layout.scss */
+.relevants {
+  padding-top: 2em;
+}
+/* line 83, ../../app/sass/layout/_layout.scss */
+.relevants .titulo1 {
+  margin-bottom: 0.83333em;
+}
+/* line 84, ../../app/sass/layout/_layout.scss */
+.relevants .relevant {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  margin-bottom: 3em;
+  min-height: 17.6em;
+}
+/* line 86, ../../app/sass/layout/_layout.scss */
+.relevants .relevant.type2 {
+  min-height: 20em;
+}
+/* line 88, ../../app/sass/layout/_layout.scss */
+.relevants .relevant .relevant_information {
+  margin-left: 1.3em;
+}
+/* line 89, ../../app/sass/layout/_layout.scss */
+.relevants .relevant > img {
+  margin-bottom: 1em;
+}
+/* line 90, ../../app/sass/layout/_layout.scss */
+.relevants .relevant p {
+  font-size: 1.4em;
+  margin-bottom: 0.64286em;
+  line-height: 18px;
+  line-height: 1.125rem;
+}
+
+/* line 95, ../../app/sass/layout/_layout.scss */
+.download_area {
+  padding-right: 4px;
+  background: url(../imagenes/img/shadow_area.png) repeat-x 0 0;
+}
+/* line 98, ../../app/sass/layout/_layout.scss */
+.download_area .download_content {
+  overflow: auto;
+  position: relative;
+  padding: 0.5em 0 0.5em 2.5em;
+  border-bottom: 1px solid #cccccc;
+  max-height: 218px;
+}
+/* line 104, ../../app/sass/layout/_layout.scss */
+.download_area .download_content.dc_large {
+  max-height: 425px;
+}
+/* line 107, ../../app/sass/layout/_layout.scss */
+.download_area .download_content ul {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* line 109, ../../app/sass/layout/_layout.scss */
+.download_area .download_content ul li a {
+  color: #333;
+  font-weight: normal;
+  font-size: 1em;
+}
+/* line 115, ../../app/sass/layout/_layout.scss */
+.download_area .download_content ul li.download_title {
+  color: #006699;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 0.7em 0 0.3em 0;
+  width: 75%;
+}
+/* line 117, ../../app/sass/layout/_layout.scss */
+.download_area .download_content ul li.download_title.title_idioma {
+  font-size: 1.27273em;
+}
+/* line 121, ../../app/sass/layout/_layout.scss */
+.download_area .download_content ul li.attach {
+  color: #333333;
+  font-size: 1.2em;
+  padding: 0.9em 0 0.7em 3.2em;
+  margin-left: 0.3em;
+  border-bottom: 1px solid #cccccc;
+  background: url(../imagenes/img/sprite/ico_pdf.png) no-repeat 8px 7px;
+}
+/* line 125, ../../app/sass/layout/_layout.scss */
+.download_area .download_content ul li.attach_first {
+  border-top: 1px solid #cccccc;
+}
+
+/* line 129, ../../app/sass/layout/_layout.scss */
+.twitter_area {
+  margin-bottom: 2.2em;
+  margin-left: 0;
+}
+/* line 130, ../../app/sass/layout/_layout.scss */
+.twitter_area .twitter_content {
+  height: 200px;
+  overflow: hidden;
+  border-bottom: 1px solid #cccccc;
+  padding-left: 3em;
+}
+/* line 131, ../../app/sass/layout/_layout.scss */
+.twitter_area .twitter_content.tw-large {
+  height: 350px;
+}
+/* line 139, ../../app/sass/layout/_layout.scss */
+.twitter_area .twitter_content iframe {
+  height: 100%;
+  width: 100% !important;
+}
+
+/* line 145, ../../app/sass/layout/_layout.scss */
+.timeline-header {
+  display: none;
+}
+
+/* line 146, ../../app/sass/layout/_layout.scss */
+.faq {
+  margin-bottom: 2.8em;
+}
+/* line 147, ../../app/sass/layout/_layout.scss */
+.faq > a {
+  font-size: 2.4em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #999999;
+  padding: 0.75em 2.91667em;
+  text-align: center;
+  display: block;
+  font-weight: normal;
+  background: #fbfbfb url(../imagenes/img/sprite/ico_information.png) no-repeat 35px 5px;
+  border: 1px solid #f0f0f0;
+  position: relative;
+/*   behavior: url(../js/pie/PIE.htc); */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 156, ../../app/sass/layout/_layout.scss */
+.box_content {
+  padding: 1em 2em 1em 3.3em;
+  margin-bottom: 2.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  word-wrap: break-word;
+}
+/* line 161, ../../app/sass/layout/_layout.scss */
+.box_content h3 {
+  color: #990000;
+  font-size: 1.8em;
+}
+.estiloRol1 {
+	font-size: 1.6em !important; 
+	padding-right: 15px !important; 
+	text-align:justify !important;
+}
+.estiloRol2 {
+	font-size: 1.6em !important; 
+	padding-right: 15px !important; 
+	text-align:center !important;
+}
+.estiloRol3 {
+	font-size: 1.6em !important; 
+	padding-right: 15px !important; 
+	text-align:justify !important; 
+	color:blue !important;
+}
+
+/* line 165, ../../app/sass/layout/_layout.scss */
+.box_content p {
+  font-size: 1.2em;
+  padding: 1em 0;
+}
+/* line 169, ../../app/sass/layout/_layout.scss */
+.box_content a {
+  color: #006699;
+  text-decoration: underline;
+}
+
+/* line 174, ../../app/sass/layout/_layout.scss */
+.image_area {
+  margin-top: 2.5em;
+  text-align: center;
+}
+
+/* line 178, ../../app/sass/layout/_layout.scss */
+.login_area {
+  padding-right: 0;
+}
+/* line 180, ../../app/sass/layout/_layout.scss */
+.login_area ul {
+  margin-top: 1.6em;
+  margin-bottom: 2em;
+}
+/* line 5, ../../app/sass/layout/_mixins.scss */
+.login_area ul:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+/* line 184, ../../app/sass/layout/_layout.scss */
+.login_area ul li {
+  display: inline;
+  float: left;
+  margin-left: 1.9em;
+}
+
+.login_area ul li.a {
+  display: block;
+  float: left;
+  margin-left: 1.9em;
+}
+
+.login_area ul li.b {
+  display: block;
+  float: left;
+  margin-left: 2.4em;
+}
+
+/* line 188, ../../app/sass/layout/_layout.scss */
+.login_area ul li label {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+/* line 194, ../../app/sass/layout/_layout.scss */
+.login_area ul li input.login {
+  width: 12.8em;
+  padding: 0.6em 0 0.6em 0.6em;
+  margin-top: 0.3em;
+  margin-right: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+}
+/* line 205, ../../app/sass/layout/_layout.scss */
+.login_area ul li:first-child {
+  margin-left: 19px;
+}
+/* line 209, ../../app/sass/layout/_layout.scss */
+.login_area a {
+  display: inline-block;
+  padding-right: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  margin-top: 0.5em;
+}
+
+/* line 218, ../../app/sass/layout/_layout.scss */
+.login_method_area {
+  padding-right: 1em;
+}
+/* line 220, ../../app/sass/layout/_layout.scss */
+.login_method_area ul {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 224, ../../app/sass/layout/_layout.scss */
+.login_method_area ul.rtxalign {
+  text-align: right;
+}
+/* line 227, ../../app/sass/layout/_layout.scss */
+.login_method_area ul li {
+  padding: 0 1em;
+}
+/* line 229, ../../app/sass/layout/_layout.scss */
+.login_method_area ul li p {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0;
+  font-weight: bold;
+}
+/* line 234, ../../app/sass/layout/_layout.scss */
+.login_method_area ul li p a {
+  margin-right: 1em;
+}
+/* line 238, ../../app/sass/layout/_layout.scss */
+.login_method_area ul li a.btn {
+  background-color: #3d89d1;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  line-height: 2em;
+}
+/* line 247, ../../app/sass/layout/_layout.scss */
+.login_method_area ul:last-child {
+  margin: 1em 0;
+  text-align: center;
+}
+/* line 252, ../../app/sass/layout/_layout.scss */
+.login_method_area .ico {
+  height: 5.9em;
+  padding-left: 8em;
+  display: table;
+}
+/* line 257, ../../app/sass/layout/_layout.scss */
+.login_method_area .ico-dni-elec {
+  background: url("../imagenes/img/ico-dni-electronico.png") no-repeat 0 center;
+}
+/* line 260, ../../app/sass/layout/_layout.scss */
+.login_method_area .ico-certi-elec {
+  background: url("../imagenes/img/ico-certificado-electronico.png") no-repeat 4% center;
+}
+/* line 263, ../../app/sass/layout/_layout.scss */
+.login_method_area .ico-usuario {
+  background: url("../imagenes/img/ico-usuario.png") no-repeat 5% center;
+}
+
+/* line 267, ../../app/sass/layout/_layout.scss */
+.interest_area {
+  margin-bottom: 1.7em;
+  padding-bottom: 0;
+}
+/* line 270, ../../app/sass/layout/_layout.scss */
+.interest_area p {
+  font-weight: bold;
+  line-height: 1.30769em;
+  letter-spacing: 0.01923em;
+}
+
+/* line 276, ../../app/sass/layout/_layout.scss */
+.links_area {
+  padding-left: 16em;
+  background: url("../imagenes/img/ico-links-note.png") no-repeat 1.7em bottom;
+}
+/* line 279, ../../app/sass/layout/_layout.scss */
+.links_area ul {
+  padding-left: 1.8em;
+}
+/* line 281, ../../app/sass/layout/_layout.scss */
+.links_area ul li {
+  margin-bottom: 1.2em;
+  display: table;
+}
+/* line 284, ../../app/sass/layout/_layout.scss */
+.links_area ul li a {
+  font-size: 1.4em;
+  color: #333333;
+  font-weight: bold;
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+}
+/* line 293, ../../app/sass/layout/_layout.scss */
+.links_area ul li:last-child {
+  margin-bottom: 0;
+}
+/* line 297, ../../app/sass/layout/_layout.scss */
+.links_area ul li:before {
+  content: "\25CF";
+  font-size: 1.8em;
+  padding-right: 0.2em;
+  position: absolute;
+  margin-left: -0.92857em;
+  margin-top: -0.21429em;
+}
+
+/* line 306, ../../app/sass/layout/_layout.scss */
+.ccaa-list {
+  margin-bottom: 1em;
+}
+/* line 308, ../../app/sass/layout/_layout.scss */
+.ccaa-list ul {
+  margin-left: 0.7em;
+}
+/* line 310, ../../app/sass/layout/_layout.scss */
+.ccaa-list ul li {
+  border-bottom: 1px solid #cccccc;
+  padding: 0.23em 0;
+  background: url("../imagenes/img/ico-info.png") no-repeat 90% center;
+}
+/* line 314, ../../app/sass/layout/_layout.scss */
+.ccaa-list ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  padding-left: 2.30769em;
+  font-size: 1.3em;
+  line-height: 1.30769em;
+  font-weight: normal;
+  display: block;
+}
+/* line 324, ../../app/sass/layout/_layout.scss */
+.ccaa-list ul li:first-child {
+  border-top: 1px solid #cccccc;
+}
+/* line 327, ../../app/sass/layout/_layout.scss */
+.ccaa-list ul li:hover {
+  background-color: #f7d300;
+}
+
+/* line 332, ../../app/sass/layout/_layout.scss */
+.ccaa-select {
+  margin-bottom: 2em;
+  display: none;
+}
+/* line 335, ../../app/sass/layout/_layout.scss */
+.ccaa-select select {
+  padding: 0.8em;
+  vertical-align: bottom;
+  margin-right: 2em;
+  min-height: 44px;
+  -webkit-appearance: menulist-button;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid #cccccc;
+  box-shadow: inset 0px 0px 3px #EAEAEA;
+  -webkit-box-shadow: inset 0px 0px 3px #EAEAEA;
+  -moz-box-shadow: inset 0px 0px 3px #EAEAEA;
+  -o-box-shadow: inset 0px 0px 3px #EAEAEA;
+}
+
+/* line 353, ../../app/sass/layout/_layout.scss */
+.highlightArea {
+  background-color: #fceeab;
+}
+
+/* line 356, ../../app/sass/layout/_layout.scss */
+.markedAreaLight {
+  background-color: #f6f5e8;
+}
+
+/* line 359, ../../app/sass/layout/_layout.scss */
+.markedAreaStrong {
+  background-color: #e5e5e5;
+}
+
+/**************
+**** FAQ ******
+**************/
+/* line 366, ../../app/sass/layout/_layout.scss */
+.wrapper_preguntas_frecuentes {
+  margin-bottom: 2.5em;
+}
+/* line 368, ../../app/sass/layout/_layout.scss */
+.wrapper_preguntas_frecuentes h2 {
+  margin-left: 0.3em;
+}
+
+/* line 373, ../../app/sass/layout/_layout.scss */
+.desplegar_acordeon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 5, ../../app/sass/layout/_mixins.scss */
+.cogerAnchoAcordeon:after, .centrar_texto:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* line 379, ../../app/sass/layout/_layout.scss */
+.cogerAnchoAcordeon {
+  position: relative;
+}
+
+/* line 380, ../../app/sass/layout/_layout.scss */
+.centrar_texto {
+  position: absolute;
+  right: 1px;
+  height: 100%;
+}
+
+/* line 382, ../../app/sass/layout/_layout.scss */
+.acordeon_titulo {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+/* line 384, ../../app/sass/layout/_layout.scss */
+.acordeon_contenido {
+  display: none;
+}
+
+/* line 387, ../../app/sass/layout/_layout.scss */
+.acordeon_contenido_main {
+  padding-left: 1em;
+  padding-bottom: 2em;
+  padding-right: 3em;
+}
+/* line 391, ../../app/sass/layout/_layout.scss */
+.acordeon_contenido_main p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  padding-top: 1.3em;
+  line-height: 17px;
+}
+/* line 397, ../../app/sass/layout/_layout.scss */
+.acordeon_contenido_main p.element_acor_content_titulo + p {
+  padding-top: 0;
+}
+/* line 398, ../../app/sass/layout/_layout.scss */
+.acordeon_contenido_main a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 17px;
+  color: #006699;
+  font-weight: bold;
+  border-bottom: solid 1px #006699;
+}
+/* line 406, ../../app/sass/layout/_layout.scss */
+.acordeon_contenido_main p.enlace {
+  margin-bottom: 1.3em;
+}
+/* line 407, ../../app/sass/layout/_layout.scss */
+.acordeon_contenido_main ul {
+  padding-top: 1.3em;
+}
+/* line 409, ../../app/sass/layout/_layout.scss */
+.acordeon_contenido_main ul li {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.5em 0;
+  list-style: inside square;
+  font-size: 1.3em;
+  line-height: 17px;
+}
+/* line 415, ../../app/sass/layout/_layout.scss */
+.acordeon_contenido_main ul li p {
+  font-size: 1em;
+  .
+				margin-left: 1em;
+  padding-top: 0.5em;
+}
+/* line 421, ../../app/sass/layout/_layout.scss */
+.acordeon_contenido_main ul.first {
+  padding-top: 1em;
+}
+/* line 423, ../../app/sass/layout/_layout.scss */
+.acordeon_contenido_main ul + p {
+  padding-top: 1em;
+}
+/* line 424, ../../app/sass/layout/_layout.scss */
+.acordeon_contenido_main ul.yson {
+  padding-left: 1em;
+  padding-top: 0em;
+}
+
+/* line 430, ../../app/sass/layout/_layout.scss */
+.acordeon_elemento {
+  margin-top: 1px;
+  border-top: solid 1px #ebebec;
+}
+/* line 433, ../../app/sass/layout/_layout.scss */
+.acordeon_elemento a {
+  color: #333;
+}
+/* line 434, ../../app/sass/layout/_layout.scss */
+.acordeon_elemento .backg_elem {
+  margin-top: 1px;
+  	/*background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#ebebec));
+      background: -webkit-linear-gradient(#ffffff, #ebebec);
+      background: -moz-linear-gradient(#ffffff, #ebebec);
+      background: -ms-linear-gradient(#ffffff, #ebebec);
+      background: -o-linear-gradient(#ffffff, #ebebec);
+      background: linear-gradient(#ffffff, #ebebec);
+      -pie-background: linear-gradient(#ffffff, #ebebec);
+      @include iecss3();*/
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 0%, white 37%, #fafafa 57%, #eaeaeb 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(37%, white), color-stop(57%, #fafafa), color-stop(100%, #eaeaeb));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%, white 37%, #fafafa 57%, #eaeaeb 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, white 0%, white 37%, #fafafa 57%, #eaeaeb 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, white 0%, white 37%, #fafafa 57%, #eaeaeb 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 37%, #fafafa 57%, #eaeaeb 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eaeaeb',GradientType=0 );
+  /* IE6-9 */
+}
+/* line 459, ../../app/sass/layout/_layout.scss */
+.acordeon_elemento .plegado {
+  display: inline;
+}
+/* line 462, ../../app/sass/layout/_layout.scss */
+.acordeon_elemento .desplegado {
+  display: none;
+}
+/* line 465, ../../app/sass/layout/_layout.scss */
+.acordeon_elemento.active {
+  border-top: solid 1px #659bc6;
+}
+/* line 467, ../../app/sass/layout/_layout.scss */
+.acordeon_elemento.active .backg_elem {
+  	/*background: -webkit-gradient(linear, 0 0, 0 bottom, from(#659bc6), to(#3a84b3));
+      background: -webkit-linear-gradient(#659bc6, #3a84b3);
+      background: -moz-linear-gradient(#659bc6, #3a84b3);
+      background: -ms-linear-gradient(#659bc6, #3a84b3);
+      background: -o-linear-gradient(#659bc6, #3a84b3);
+      background: linear-gradient(#659bc6, #3a84b3);
+      -pie-background: linear-gradient(#659bc6, #3a84b3);
+      @include iecss3();*/
+  background: #659bc6;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #659bc6 0%, #6098c4 31%, #5290bd 61%, #3a84b3 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #659bc6), color-stop(31%, #6098c4), color-stop(61%, #5290bd), color-stop(100%, #3a84b3));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #659bc6 0%, #6098c4 31%, #5290bd 61%, #3a84b3 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #659bc6 0%, #6098c4 31%, #5290bd 61%, #3a84b3 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #659bc6 0%, #6098c4 31%, #5290bd 61%, #3a84b3 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #659bc6 0%, #6098c4 31%, #5290bd 61%, #3a84b3 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#659bc6', endColorstr='#3a84b3',GradientType=0 );
+  /* IE6-9 */
+}
+/* line 489, ../../app/sass/layout/_layout.scss */
+.acordeon_elemento.active a {
+  color: #fff;
+}
+/* line 490, ../../app/sass/layout/_layout.scss */
+.acordeon_elemento.active .plegado {
+  display: none;
+}
+/* line 493, ../../app/sass/layout/_layout.scss */
+.acordeon_elemento.active .desplegado {
+  display: inline;
+}
+/* line 498, ../../app/sass/layout/_layout.scss */
+.acordeon_elemento .helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+/* line 503, ../../app/sass/layout/_layout.scss */
+.acordeon_elemento .imagenAcordeon {
+  vertical-align: middle;
+  max-height: 29px;
+  max-width: 23px;
+}
+
+/******************
+****** VIDEO ******
+******************/
+/* line 513, ../../app/sass/layout/_layout.scss */
+.video {
+  margin-top: 2em;
+  max-width: 580px;
+  height: 360px;
+}
+
+/* line 1, ../../app/sass/layout/_titulos.scss */
+.titulo_logo {
+  width: 172px;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+  line-height: 17px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  padding-left: 1em;
+}
+/* line 10, ../../app/sass/layout/_titulos.scss */
+.titulo_logo .tituloDentro {
+  color: #d61219;
+  font-size: 1.4em;
+  font-style: italic;
+  letter-spacing: 0;
+  padding-top: 5px;
+  font-family: sans-serif;
+}
+
+/* line 20, ../../app/sass/layout/_titulos.scss */
+.titulo1 {
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.4em;
+}
+
+/* line 26, ../../app/sass/layout/_titulos.scss */
+.titulo2 {
+  font-size: 1.4em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+/* line 32, ../../app/sass/layout/_titulos.scss */
+.titulo20 {
+  color: #999999;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+}
+/* line 36, ../../app/sass/layout/_titulos.scss */
+.titulo20 strong.tipo1 {
+  font-size: 3.23077em;
+}
+/* line 39, ../../app/sass/layout/_titulos.scss */
+.titulo20 strong.tipo2 {
+  font-size: 1.61538em;
+}
+
+/* line 45, ../../app/sass/layout/_titulos.scss */
+.titulo_destacado {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 0.5625em;
+}
+
+/* line 47, ../../app/sass/layout/_titulos.scss */
+.titulo_descarga {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #00b0ca;
+  padding: 1.875em 0 0.75em 5.625em;
+  border-bottom: 1px solid #cccccc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* line 50, ../../app/sass/layout/_titulos.scss */
+.titulo_descarga.download {
+  background: url(../imagenes/img/sprite/download_area.png) no-repeat 25px 16px;
+}
+/* line 52, ../../app/sass/layout/_titulos.scss */
+.titulo_descarga.download-bg {
+  background: none;
+  background: url(../imagenes/img/sprite/download_area.png) no-repeat 25px 16px;
+}
+/* line 56, ../../app/sass/layout/_titulos.scss */
+.titulo_descarga.tweets {
+  background: url(../imagenes/img/sprite/twitter.png) no-repeat 30px 15px;
+}
+
+/* line 58, ../../app/sass/layout/_titulos.scss */
+.download-no-bg {
+  background: none;
+}
+
+/* line 62, ../../app/sass/layout/_titulos.scss */
+.text {
+  margin-bottom: 3em;
+}
+/* line 64, ../../app/sass/layout/_titulos.scss */
+.text.mb-0 {
+  margin-bottom: 0;
+}
+
+/* line 68, ../../app/sass/layout/_titulos.scss */
+.text .btn-wrapper {
+  text-align: center;
+}
+
+/* line 71, ../../app/sass/layout/_titulos.scss */
+.text p, .text li, .text a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+}
+
+/* line 76, ../../app/sass/layout/_titulos.scss */
+.text a {
+  color: #006699;
+  text-decoration: underline;
+}
+
+/* line 80, ../../app/sass/layout/_titulos.scss */
+.text a.btn {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  line-height: 1.5em;
+  display: inline-block;
+}
+
+/* line 87, ../../app/sass/layout/_titulos.scss */
+.text p {
+  padding: 0.2em 0;
+  line-height: 1.30769em;
+}
+
+/* line 92, ../../app/sass/layout/_titulos.scss */
+.text p.highlight {
+  font-weight: bold;
+  padding: 0.8em 0;
+  margin-top: 0.5em;
+}
+
+/* line 97, ../../app/sass/layout/_titulos.scss */
+.text.near-ps {
+  margin-bottom: 2em;
+}
+/* line 99, ../../app/sass/layout/_titulos.scss */
+.text.near-ps p.highlight {
+  padding: 0.3em 0;
+}
+
+/* line 103, ../../app/sass/layout/_titulos.scss */
+.text p.near-hls {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* line 110, ../../app/sass/layout/_titulos.scss */
+.text p a, .text p.highlight a {
+  font-size: 1em;
+}
+
+/* line 113, ../../app/sass/layout/_titulos.scss */
+.text ul {
+  margin: 0;
+}
+
+/* line 116, ../../app/sass/layout/_titulos.scss */
+.text ul li {
+  list-style: inside square;
+  padding: 0.7em 0;
+  line-height: 1.30769em;
+}
+
+/* line 121, ../../app/sass/layout/_titulos.scss */
+.text ul.near-lis {
+  margin: 1em 0;
+}
+/* line 123, ../../app/sass/layout/_titulos.scss */
+.text ul.near-lis.mg-0 {
+  margin: 0;
+}
+/* line 126, ../../app/sass/layout/_titulos.scss */
+.text ul.near-lis li {
+  padding: 0.1em 0;
+  line-height: 1.30769em;
+}
+
+/***********************************
+********* IR A CONTENIDO ***********
+************************************/
+/* line 4, ../../app/sass/template/_header.scss */
+#skip a {
+  position: absolute;
+  left: -100%;
+  color: #fff;
+  background: #069;
+  padding: 1.5em 1em;
+  float: left;
+  border: 2px solid #edc577;
+  -moz-border-radius: 0 0 10px 0;
+  -webkit-border-radius: 0;
+  border-radius: 0 0 10px 0;
+  -o-transition: left 0.25s;
+  -moz-transition: left 0.25s;
+  -webkit-transition: left 0.25s;
+  transition: left 0.25s;
+  outline: none !important;
+  color: #fff;
+  font-size: 1.4em;
+  margin-left: 0.8em;
+}
+/* line 25, ../../app/sass/template/_header.scss */
+#skip a:focus {
+  left: 0;
+}
+
+/***********************************
+************* IDIOMAS **************
+************************************/
+/* line 34, ../../app/sass/template/_header.scss */
+.wrapper_idioma {
+  background: #eee;
+}
+
+/* line 36, ../../app/sass/template/_header.scss */
+#idiomas, .idiomasDesple {
+  background: #eeeeee;
+  margin: 0 auto;
+  padding: 0.8em 0 0.8em 0;
+}
+/* line 40, ../../app/sass/template/_header.scss */
+#idiomas ul, .idiomasDesple ul {
+  text-align: right;
+}
+/* line 42, ../../app/sass/template/_header.scss */
+#idiomas ul li, .idiomasDesple ul li {
+  display: inline;
+  padding: 0;
+  font-family: "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+/* line 46, ../../app/sass/template/_header.scss */
+#idiomas ul li a, .idiomasDesple ul li a {
+  text-decoration: none;
+  color: #003F7D;
+  font-size: 1.4em;
+  margin-left: 0.8em;
+}
+
+/***********************************
+************* LOGO *****************
+************************************/
+/* line 59, ../../app/sass/template/_header.scss */
+.wrapper_logo {
+  background: url("../imagenes/img/background_cabecera.jpg") no-repeat center;
+}
+
+/* line 61, ../../app/sass/template/_header.scss */
+.logoEEEJ_garantia_juvenil {
+  height: 9.7em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+/* line 66, ../../app/sass/template/_header.scss */
+.logoEEEJ_garantia_juvenil_peque {
+  height: 9.7em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  display: none;
+  visibility: hidden;
+  height: 0;
+}
+
+/* line 74, ../../app/sass/template/_header.scss */
+.logo_garantia_juvenil_clearfix {
+  width: 100%;
+}
+/* line 5, ../../app/sass/layout/_mixins.scss */
+.logo_garantia_juvenil_clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* line 75, ../../app/sass/template/_header.scss */
+.enlace_logo_garantia_juvenil {
+  width: auto;
+}
+
+/* line 76, ../../app/sass/template/_header.scss */
+a.logo_gde {
+  margin-top: 2.5em;
+}
+
+/***********************************
+************* MENU *****************
+************************************/
+/* line 81, ../../app/sass/template/_header.scss */
+.menu {
+  margin: 0.1em 0;
+  background: #eceded;
+}
+/* line 84, ../../app/sass/template/_header.scss */
+.menu ul {
+  padding-top: 0.5em;
+}
+/* line 85, ../../app/sass/template/_header.scss */
+.menu ul li {
+  margin-left: -3px;
+  border-left: 1px solid #999999;
+  display: inline-block;
+  width: 220px;
+  padding: 1.5em 2em;
+  text-align: center;
+}
+/* line 92, ../../app/sass/template/_header.scss */
+.menu ul li.first {
+  border-left: 0px solid #999999;
+  width: 100px;
+}
+/* line 93, ../../app/sass/template/_header.scss */
+.menu ul li.active {
+  background: #ffffff;
+}
+/* line 94, ../../app/sass/template/_header.scss */
+.menu ul li a {
+  color: #333333;
+  font-family: "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 1.6em;
+}
+
+/* line 104, ../../app/sass/template/_header.scss */
+.cabeceraCentrado {
+  float: none;
+  display: block;
+  clear: both;
+  margin: 0 auto;
+  padding: 0;
+  width: 925px;
+}
+
+/***********************************
+************* LOGUEADO *************
+************************************/
+/* line 112, ../../app/sass/template/_header.scss */
+.logueado_main {
+  background-color : #3d89d1;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#4A91DD), to(#2050CD));
+  background: -webkit-linear-gradient(#4A91DD, #2050CD);
+  background: -moz-linear-gradient(#4A91DD, #2050CD);
+  background: -ms-linear-gradient(#4A91DD, #2050CD);
+  background: -o-linear-gradient(#4A91DD, #2050CD);
+  background: linear-gradient(#4A91DD, #2050CD);
+/*   -pie-background: linear-gradient(#4A91DD, #2050CD); */
+  position: relative;
+/*   behavior: url(PIE.htc); */
+}
+
+/* line 122, ../../app/sass/template/_header.scss */
+.logueado {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+/* line 125, ../../app/sass/template/_header.scss */
+.logueado p.textoBienvenido {
+  margin-top: 5%;
+  color: #ffcc00;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8em;
+  font-weight: bold;
+  min-height:35px;
+}
+/* line 131, ../../app/sass/template/_header.scss */
+.logueado p.textoBienvenido span {
+  font-size: 0.875em;
+  font-weight: normal;
+  color: #ffffff;
+}
+/* line 137, ../../app/sass/template/_header.scss */
+.logueado .usuario {
+  margin-right: 2em;
+}
+
+.logueado .avisos {
+  margin-left: 2em;
+}
+
+/* line 138, ../../app/sass/template/_header.scss */
+.logueado .usuario, .logueado .solicitar_baja, .logueado .salir, .logueado .avisos{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.logueado .salir{
+	margin-left: 2em;
+}
+
+/* line 142, ../../app/sass/template/_header.scss */
+.logueado p.usuario_solicita {
+  font-size: 1.16667em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  display: inline;
+}
+/* line 149, ../../app/sass/template/_header.scss */
+.logueado div.usuario_solicita {
+  margin-top: 1em;
+  padding-left: 0.5em;
+}
+
+/* line 155, ../../app/sass/template/_header.scss */
+.enlaceEditaTuPerfil,
+.enlaceSolicitarBaja {
+  display: block;
+  height: 34px;
+  width: 100%;
+}
+
+/* line 1, ../../app/sass/template/_footer.scss */
+.wrapper_footer {
+  background: #333333;
+  margin-top: 1px;
+}
+
+/* line 5, ../../app/sass/template/_footer.scss */
+.footer {
+  padding-top: 3em;
+  color: #cccccc;
+  min-height: 40em;
+}
+/* line 9, ../../app/sass/template/_footer.scss */
+.footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+/* line 14, ../../app/sass/template/_footer.scss */
+.footer ul {
+  padding-top: 1em;
+}
+/* line 16, ../../app/sass/template/_footer.scss */
+.footer ul.separation2 {
+  padding-top: 2em;
+}
+/* line 18, ../../app/sass/template/_footer.scss */
+.footer ul li {
+  margin-bottom: 1.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+/* line 24, ../../app/sass/template/_footer.scss */
+.footer ul a {
+  color: #cccccc;
+}
+/* line 27, ../../app/sass/template/_footer.scss */
+.footer .contenidoTexto {
+  padding-top: 3.2em;
+}
+/* line 30, ../../app/sass/template/_footer.scss */
+.footer .twitter {
+  padding-top: 0.5em;
+  padding-left: 1em;
+}
+/* line 34, ../../app/sass/template/_footer.scss */
+.footer .siguenos img {
+  width: 42px;
+  max-width: 42px;
+}
+
+/* line 39, ../../app/sass/template/_footer.scss */
+.wrapper_cookies {
+  background: #e5e5e5;
+}
+
+/* line 41, ../../app/sass/template/_footer.scss */
+.cookies {
+  color: #666666;
+  padding: 3em 0.6em;
+  text-align: center;
+}
+/* line 45, ../../app/sass/template/_footer.scss */
+.cookies p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+/* line 53, ../../app/sass/template/_footer.scss */
+.wrapper_informacion {
+  margin-top: 10px;
+  margin-bottom: 1px;
+  background: #fbfbfb;
+  border-top: solid 1px #f0f0f0;
+  border-bottom: solid 1px #f0f0f0;
+}
+
+/* line 1, ../../app/sass/template/_form.scss */
+.btn {
+  background-color: #3d89d1;
+  color: #fff;
+  background: linear-gradient(to bottom,  #3d89d1 0%,#064d89 100%);
+  padding: 10px 45px;
+  font-size: 2.1em;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+  border: none;
+  -webkit-appearance: none;
+  position: relative;
+/*   behavior: url(../js/pie/PIE.htc); */
+}
+
+/* line 12, ../../app/sass/template/_form.scss */
+.btn-mt4 {
+  margin-top: 0.4em;
+}
+
+.btn-mt7 {
+  margin-top: 1em;
+}
+
+.btn-mt5 {
+  margin-top: 0.4em;
+  margin-bottom: 0.6em;
+  /* float: left; */
+  margin-left: 1em !important;
+}
+
+.btn-mt6 {
+  margin-top: 0.4em;
+  margin-bottom: 0.6em;
+  float: left; 
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+}
+
+/* line 15, ../../app/sass/template/_form.scss */
+.btn-litle {
+  padding: 0.33333em 0.7619em;
+  margin-top: 0.1em;
+}
+
+/* line 20, ../../app/sass/template/_form.scss */
+.customSelect {
+  /* Styles For Your Select Box */
+  font-size: 1.3em;
+  vertical-align: bottom;
+  margin-right: 2em;
+  min-height: 44px;
+  border: 1px solid #cccccc;
+  box-shadow: inset 0px 0px 3px #EAEAEA;
+  -webkit-box-shadow: inset 0px 0px 3px #EAEAEA;
+  -moz-box-shadow: inset 0px 0px 3px #EAEAEA;
+  -o-box-shadow: inset 0px 0px 3px #EAEAEA;
+  line-height: 3.4em;
+  padding-left: 1em;
+}
+
+/* line 36, ../../app/sass/template/_form.scss */
+.customSelect.changed {
+  /* You can use this if you want a different style after user has made a selection */
+}
+
+/* line 40, ../../app/sass/template/_form.scss */
+.customSelectFocus {
+  /* You can use this if you want a different style after user has made a selection */
+}
+
+/* line 44, ../../app/sass/template/_form.scss */
+.customSelectOpen {
+  /* You can use this if you want a different style after user has made a selection */
+}
+
+/* We can style the inner box, too */
+/* line 50, ../../app/sass/template/_form.scss */
+.customSelectInner {
+  background: url(../imagenes/img/ico-select.png) no-repeat 90% center;
+}
+
+/* line 1, ../../app/sass/template/_carousel.scss */
+.tituloCarousel {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+/* line 7, ../../app/sass/template/_carousel.scss */
+.wrapper_participa {
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f9f9f9), to(#e5e5e5));
+  background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
+  background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
+  background: -ms-linear-gradient(#f9f9f9, #e5e5e5);
+  background: -o-linear-gradient(#f9f9f9, #e5e5e5);
+  background: linear-gradient(#f9f9f9, #e5e5e5);
+/*   -pie-background: linear-gradient(#f9f9f9, #e5e5e5); */
+  position: relative;
+/*   behavior: url(../js/pie/PIE.htc); */
+}
+
+/* line 18, ../../app/sass/template/_carousel.scss */
+.centradoMaspequeno {
+  position: relative;
+  float: none;
+  display: block;
+  clear: both;
+  margin: 0 auto;
+  padding: 0;
+  width: 76%;
+}
+
+/* line 28, ../../app/sass/template/_carousel.scss */
+.btnCarousel {
+  margin-top: 23px;
+  margin-bottom: 25px;
+}
+/* line 31, ../../app/sass/template/_carousel.scss */
+.btnCarousel a.btn {
+  color: #fff;
+  font-size: 2.1em !important;
+}
+
+/* line 36, ../../app/sass/template/_carousel.scss */
+.colTexto {
+  margin-left: 2%;
+  width: 32%;
+}
+
+/* line 40, ../../app/sass/template/_carousel.scss */
+.textoCarousel_home {
+  min-height: 284px;
+  position: relative;
+  top: 0.1em;
+  margin-top: 1.3em;
+  margin-right: 0.1em;
+  padding-top: 1em;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  padding-bottom: 1em;
+  background-image: url("../imagenes/img/background_carousel_home.png");
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+}
+/* line 53, ../../app/sass/template/_carousel.scss */
+.textoCarousel_home.tipo2 p {
+  padding-left: 37px;
+  padding-right: 74px;
+}
+/* line 57, ../../app/sass/template/_carousel.scss */
+.textoCarousel_home p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.9em;
+  color: #ffffff;
+  padding-bottom: 0.31429em;
+  margin-bottom: 15px;
+}
+/* line 64, ../../app/sass/template/_carousel.scss */
+.textoCarousel_home p strong {
+  line-height: 37px;
+  font-size: 2em;
+}
+
+/* line 71, ../../app/sass/template/_carousel.scss */
+.swiper-container--participa {
+  width: 100%;
+  height: 97px;
+  color: #fff;
+  text-align: center;
+}
+/* line 76, ../../app/sass/template/_carousel.scss */
+.swiper-container--participa img {
+  width: 95px;
+  height: 65px;
+}
+/* line 80, ../../app/sass/template/_carousel.scss */
+.swiper-container--participa .texto-participa {
+  margin: 0 auto;
+  width: 105px;
+}
+/* line 84, ../../app/sass/template/_carousel.scss */
+.swiper-container--participa p {
+  padding-top: 0.5em;
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666666;
+}
+
+/* line 92, ../../app/sass/template/_carousel.scss */
+.carousel--participa {
+  position: relative;
+  margin: 25px 0;
+}
+/* line 95, ../../app/sass/template/_carousel.scss */
+.carousel--participa a.carousel-control-prev--participa {
+  top: 8%;
+  left: 1%;
+  position: absolute;
+  z-index: 100;
+}
+/* line 101, ../../app/sass/template/_carousel.scss */
+.carousel--participa a.carousel-control-next--participa {
+  top: 8%;
+  left: 96%;
+  position: absolute;
+  z-index: 100;
+}
+
+/* line 109, ../../app/sass/template/_carousel.scss */
+.swiper-container--entidadesAdheridas {
+  width: 85%;
+  height: 100px;
+  color: #fff;
+  text-align: center;
+}
+/* line 114, ../../app/sass/template/_carousel.scss */
+.swiper-container--entidadesAdheridas p {
+  padding-top: 0.5em;
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666666;
+}
+
+/* line 121, ../../app/sass/template/_carousel.scss */
+.carousel--entidadesAdheridas {
+  position: relative;
+  margin: 25px 0;
+}
+/* line 124, ../../app/sass/template/_carousel.scss */
+.carousel--entidadesAdheridas a.carousel-control-prev--entidadesAdheridas {
+  top: 20%;
+  left: 1%;
+  position: absolute;
+  z-index: 100;
+}
+/* line 130, ../../app/sass/template/_carousel.scss */
+.carousel--entidadesAdheridas a.carousel-control-next--entidadesAdheridas {
+  top: 20%;
+  left: 96%;
+  position: absolute;
+  z-index: 100;
+}
+
+/*
+ * Swiper - Mobile Touch Slider CSS
+ * http://www.idangero.us/sliders/swiper
+ *
+ * Vladimir Kharlampidi, The iDangero.us
+ * http://www.idangero.us/
+ * 
+ * Copyright 2012-2013, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us
+ *
+ * Licensed under GPL & MIT
+ *
+*/
+/* ===============================================================
+Basic Swiper Styles 
+================================================================*/
+/* line 156, ../../app/sass/template/_carousel.scss */
+.swiper-container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+}
+
+/* line 168, ../../app/sass/template/_carousel.scss */
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  -webkit-transition-property: -webkit-transform, left, top;
+  -webkit-transition-duration: 0s;
+  -webkit-transform: translate3d(0px, 0, 0);
+  -webkit-transition-timing-function: ease;
+  -moz-transition-property: -moz-transform, left, top;
+  -moz-transition-duration: 0s;
+  -moz-transform: translate3d(0px, 0, 0);
+  -moz-transition-timing-function: ease;
+  -o-transition-property: -o-transform, left, top;
+  -o-transition-duration: 0s;
+  -o-transform: translate3d(0px, 0, 0);
+  -o-transition-timing-function: ease;
+  -o-transform: translate(0px, 0px);
+  -ms-transition-property: -ms-transform, left, top;
+  -ms-transition-duration: 0s;
+  -ms-transform: translate3d(0px, 0, 0);
+  -ms-transition-timing-function: ease;
+  transition-property: transform, left, top;
+  transition-duration: 0s;
+  transform: translate3d(0px, 0, 0);
+  transition-timing-function: ease;
+}
+
+/* line 197, ../../app/sass/template/_carousel.scss */
+.swiper-free-mode > .swiper-wrapper {
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  margin: 0 auto;
+}
+
+/* line 205, ../../app/sass/template/_carousel.scss */
+.swiper-slide {
+  float: left;
+}
+
+/* IE10 Windows Phone 8 Fixes */
+/* line 210, ../../app/sass/template/_carousel.scss */
+.swiper-wp8-horizontal {
+  -ms-touch-action: pan-y;
+}
+
+/* line 213, ../../app/sass/template/_carousel.scss */
+.swiper-wp8-vertical {
+  -ms-touch-action: pan-x;
+}
+
+/* ===============================================================
+Your custom styles, here you need to specify container's and slide's
+sizes, pagination, etc.
+================================================================*/
+/* line 221, ../../app/sass/template/_carousel.scss */
+.swiper-slide {
+  /* Specify Slides's Size: */
+  width: auto;
+  height: 100%;
+}
+
+/* line 227, ../../app/sass/template/_carousel.scss */
+.swiper-container--home {
+  width: 100%;
+  height: 316px;
+}
+/* line 231, ../../app/sass/template/_carousel.scss */
+.swiper-container--home .swiper-slide .img_home {
+  margin: 0 auto;
+  display: block;
+  height: 31.8em;
+}
+/* line 236, ../../app/sass/template/_carousel.scss */
+.swiper-container--home .swiper-slide .img_home1 {
+  /*background: url("../imagenes/img/imagen_Carousel.jpg") no-repeat center;*/
+  background: url("http://www.empleo.gob.es/ficheros/garantiajuvenil/img/carrusel/imagen_Carousel1.jpg") no-repeat center;
+ 
+}
+/* line 237, ../../app/sass/template/_carousel.scss */
+.swiper-container--home .swiper-slide .img_home2 {
+  /*background: url("../imagenes/img/imagen_Carousel2.jpg") no-repeat center;*/
+  background: url("http://www.empleo.gob.es/ficheros/garantiajuvenil/img/carrusel/imagen_Carousel2.jpg") no-repeat center;
+}
+
+/* line 241, ../../app/sass/template/_carousel.scss */
+.swiper-slide-active {
+  /* Specific active slide styling: */
+}
+
+/* line 245, ../../app/sass/template/_carousel.scss */
+.swiper-slide-visible {
+  /* Specific visible slide styling: */
+}
+
+/* ===============================================================
+Pagination Styles
+================================================================*/
+/* line 252, ../../app/sass/template/_carousel.scss */
+.swiper-pagination-switch {
+  /* Stylize pagination button: */
+}
+
+/* line 256, ../../app/sass/template/_carousel.scss */
+.swiper-active-switch {
+  /* Specific active button style: */
+}
+
+/* line 260, ../../app/sass/template/_carousel.scss */
+.swiper-visible-switch {
+  /* Specific visible button style: */
+}
+
+/* line 264, ../../app/sass/template/_carousel.scss */
+.carousel_control_pp {
+  position: absolute;
+  text-align: center;
+  bottom: 30px;
+  left: 48.5%;
+}
+
+/* line 273, ../../app/sass/template/_carousel.scss */
+.pagination {
+  position: absolute;
+  text-align: center;
+  bottom: 5px;
+  left: 48.1%;
+}
+
+/* line 281, ../../app/sass/template/_carousel.scss */
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background-image: url("../imagenes/img/carousel_btn_active.png");
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+/* line 289, ../../app/sass/template/_carousel.scss */
+.swiper-active-switch {
+  background-image: url("../imagenes/img/carousel_btn.png");
+}
+
+/*
+== malihu jquery custom scrollbar plugin ==
+Version: 3.0.2 
+Plugin URI: http://manos.malihu.gr/jquery-custom-content-scroller
+*/
+/*
+CONTENTS: 
+	1. BASIC STYLE - Plugin's basic/essential CSS properties (normally, should not be edited). 
+	2. VERTICAL SCROLLBAR - Positioning and dimensions of vertical scrollbar. 
+	3. HORIZONTAL SCROLLBAR - Positioning and dimensions of horizontal scrollbar.
+	4. VERTICAL AND HORIZONTAL SCROLLBARS - Positioning and dimensions of 2-axis scrollbars. 
+	5. TRANSITIONS - CSS3 transitions for hover events, auto-expanded and auto-hidden scrollbars. 
+	6. SCROLLBAR COLORS, OPACITY AND BACKGROUNDS 
+		6.1 THEMES - Scrollbar colors, opacity, dimensions, backgrounds etc. via ready-to-use themes.
+*/
+/* 
+------------------------------------------------------------------------------------------------------------------------
+1. BASIC STYLE  
+------------------------------------------------------------------------------------------------------------------------
+*/
+/* line 28, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCustomScrollbar {
+  -ms-touch-action: none;
+  touch-action: none;
+  /* MSPointer events - direct all pointer events to js */
+}
+
+/* line 29, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCustomScrollbar.mCS_no_scrollbar {
+  -ms-touch-action: auto;
+  touch-action: auto;
+}
+
+/* line 31, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCustomScrollBox {
+  /* contains plugin's markup */
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  max-width: 100%;
+  outline: none;
+  direction: ltr;
+}
+
+/* line 40, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_container {
+  /* contains the original content */
+  overflow: hidden;
+  width: auto;
+  height: auto;
+}
+
+/* 
+------------------------------------------------------------------------------------------------------------------------
+2. VERTICAL SCROLLBAR 
+y-axis
+------------------------------------------------------------------------------------------------------------------------
+*/
+/* line 55, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_inside > .mCSB_container {
+  margin-right: 30px;
+}
+
+/* line 57, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+  margin-right: 0;
+}
+
+/* non-visible scrollbar */
+/* line 59, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container {
+  /* RTL direction/left-side scrollbar */
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+/* line 64, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+  margin-left: 0;
+}
+
+/* RTL direction/left-side scrollbar */
+/* line 66, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools {
+  /* contains scrollbar markup (draggable element, dragger rail, buttons etc.) */
+  position: absolute;
+  width: 16px;
+  height: auto;
+  left: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 76, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_outside + .mCSB_scrollTools {
+  right: -26px;
+}
+
+/* scrollbar position: outside */
+/* line 79, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCS-dir-rtl > .mCSB_inside > .mCSB_scrollTools,
+.mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools {
+  /* RTL direction/left-side scrollbar */
+  right: auto;
+  left: 0;
+}
+
+/* line 84, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools {
+  left: -26px;
+}
+
+/* RTL direction/left-side scrollbar (scrollbar position: outside) */
+/* line 86, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_draggerContainer {
+  /* contains the draggable element and dragger rail markup */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+}
+
+/* line 95, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools a + .mCSB_draggerContainer {
+  margin: 20px 0;
+}
+
+/* line 97, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_draggerRail {
+  width: 12px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* line 103, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_dragger {
+  /* the draggable element */
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+  /* minimum dragger height */
+  z-index: 1;
+}
+
+/* line 110, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  /* the dragger element */
+  position: relative;
+  width: 12px;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* line 120, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+  width: 12px;
+  /* auto-expanded scrollbar */
+}
+
+/* line 123, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+  width: 8px;
+  /* auto-expanded scrollbar */
+}
+
+/* line 126, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown {
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* line 136, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_buttonDown {
+  bottom: 0;
+}
+
+/* 
+------------------------------------------------------------------------------------------------------------------------
+3. HORIZONTAL SCROLLBAR 
+x-axis
+------------------------------------------------------------------------------------------------------------------------
+*/
+/* line 147, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_horizontal.mCSB_inside > .mCSB_container {
+  margin-right: 0;
+  margin-bottom: 30px;
+}
+
+/* line 152, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_horizontal.mCSB_outside > .mCSB_container {
+  min-height: 100%;
+}
+
+/* line 154, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_horizontal > .mCSB_container.mCS_no_scrollbar_x.mCS_x_hidden {
+  margin-bottom: 0;
+}
+
+/* non-visible scrollbar */
+/* line 156, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  width: auto;
+  height: 16px;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 166, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCustomScrollBox + .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCustomScrollBox + .mCSB_scrollTools + .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  bottom: -26px;
+}
+
+/* scrollbar position: outside */
+/* line 168, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools.mCSB_scrollTools_horizontal a + .mCSB_draggerContainer {
+  margin: 0 20px;
+}
+
+/* line 170, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+  width: 100%;
+  height: 2px;
+  margin: 7px 0;
+}
+
+/* line 176, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger {
+  width: 30px;
+  /* minimum dragger width */
+  height: 100%;
+  left: 0;
+}
+
+/* line 182, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  width: 100%;
+  height: 4px;
+  margin: 6px auto;
+}
+
+/* line 189, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+  height: 12px;
+  /* auto-expanded scrollbar */
+  margin: 2px auto;
+}
+
+/* line 195, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+  height: 8px;
+  /* auto-expanded scrollbar */
+  margin: 4px 0;
+}
+
+/* line 201, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft,
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* line 211, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft {
+  left: 0;
+}
+
+/* line 213, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight {
+  right: 0;
+}
+
+/* 
+------------------------------------------------------------------------------------------------------------------------
+4. VERTICAL AND HORIZONTAL SCROLLBARS 
+yx-axis 
+------------------------------------------------------------------------------------------------------------------------
+*/
+/* line 224, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_container_wrapper {
+  position: absolute;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+/* line 237, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_container_wrapper > .mCSB_container {
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+/* line 242, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_vertical_horizontal > .mCSB_scrollTools.mCSB_scrollTools_vertical {
+  bottom: 20px;
+}
+
+/* line 244, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_vertical_horizontal > .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  right: 20px;
+}
+
+/* non-visible horizontal scrollbar */
+/* line 247, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden + .mCSB_scrollTools.mCSB_scrollTools_vertical {
+  bottom: 0;
+}
+
+/* non-visible vertical scrollbar/RTL direction/left-side scrollbar */
+/* line 251, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden + .mCSB_scrollTools ~ .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  right: 0;
+}
+
+/* RTL direction/left-side scrollbar */
+/* line 254, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  left: 20px;
+}
+
+/* non-visible scrollbar/RTL direction/left-side scrollbar */
+/* line 257, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden + .mCSB_scrollTools ~ .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  left: 0;
+}
+
+/* line 259, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container_wrapper {
+  /* RTL direction/left-side scrollbar */
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+/* line 264, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden > .mCSB_container {
+  padding-right: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 269, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden > .mCSB_container {
+  padding-bottom: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 274, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden {
+  margin-right: 0;
+  /* non-visible scrollbar */
+  margin-left: 0;
+}
+
+/* non-visible horizontal scrollbar */
+/* line 280, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden {
+  margin-bottom: 0;
+}
+
+/* 
+------------------------------------------------------------------------------------------------------------------------
+5. TRANSITIONS  
+------------------------------------------------------------------------------------------------------------------------
+*/
+/* line 295, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools,
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown,
+.mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_scrollTools .mCSB_buttonRight {
+  -webkit-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+  -o-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+  transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+/* line 305, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail {
+  -webkit-transition: width .2s ease-out .2s, height .2s ease-out .2s,  margin-left .2s ease-out .2s, margin-right .2s ease-out .2s,  margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+  -moz-transition: width .2s ease-out .2s, height .2s ease-out .2s,  margin-left .2s ease-out .2s, margin-right .2s ease-out .2s,  margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+  -o-transition: width .2s ease-out .2s, height .2s ease-out .2s,  margin-left .2s ease-out .2s, margin-right .2s ease-out .2s,  margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+  transition: width .2s ease-out .2s, height .2s ease-out .2s,  margin-left .2s ease-out .2s, margin-right .2s ease-out .2s,  margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+/* 
+------------------------------------------------------------------------------------------------------------------------
+6. SCROLLBAR COLORS, OPACITY AND BACKGROUNDS  
+------------------------------------------------------------------------------------------------------------------------
+*/
+/* 
+----------------------------------------
+6.1 THEMES 
+----------------------------------------
+*/
+/* default theme ("light") */
+/* line 343, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCS-autoHide > .mCustomScrollBox > .mCSB_scrollTools,
+.mCS-autoHide > .mCustomScrollBox ~ .mCSB_scrollTools {
+  opacity: 0;
+  filter: "alpha(opacity=0)";
+  -ms-filter: "alpha(opacity=0)";
+}
+
+/* line 350, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCustomScrollbar > .mCustomScrollBox > .mCSB_scrollTools.mCSB_scrollTools_onDrag,
+.mCustomScrollbar > .mCustomScrollBox ~ .mCSB_scrollTools.mCSB_scrollTools_onDrag,
+.mCustomScrollBox:hover > .mCSB_scrollTools,
+.mCustomScrollBox:hover ~ .mCSB_scrollTools,
+.mCS-autoHide:hover > .mCustomScrollBox > .mCSB_scrollTools,
+.mCS-autoHide:hover > .mCustomScrollBox ~ .mCSB_scrollTools {
+  opacity: 1;
+  filter: "alpha(opacity=100)";
+  -ms-filter: "alpha(opacity=100)";
+}
+
+/* line 352, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #ccc;
+  filter: "alpha(opacity=40)";
+  -ms-filter: "alpha(opacity=40)";
+}
+
+/* line 357, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #8f8f8f;
+  filter: "alpha(opacity=75)";
+  -ms-filter: "alpha(opacity=75)";
+}
+
+/* line 362, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #8f8f8f;
+  filter: "alpha(opacity=85)";
+  -ms-filter: "alpha(opacity=85)";
+}
+
+/* line 367, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #8f8f8f;
+  filter: "alpha(opacity=90)";
+  -ms-filter: "alpha(opacity=90)";
+}
+
+/* line 375, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown,
+.mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_scrollTools .mCSB_buttonRight {
+  background-image: url(mCSB_buttons.png);
+  /* css sprites */
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  filter: "alpha(opacity=40)";
+  -ms-filter: "alpha(opacity=40)";
+}
+
+/* line 381, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: 0 0;
+  /* 
+  sprites locations 
+  light: 0 0, -16px 0, -32px 0, -48px 0, 0 -72px, -16px -72px, -32px -72px
+  dark: -80px 0, -96px 0, -112px 0, -128px 0, -80px -72px, -96px -72px, -112px -72px
+  */
+}
+
+/* line 390, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: 0 -20px;
+  /* 
+  sprites locations
+  light: 0 -20px, -16px -20px, -32px -20px, -48px -20px, 0 -92px, -16px -92px, -32px -92px
+  dark: -80px -20px, -96px -20px, -112px -20px, -128px -20px, -80px -92px, -96px -92px, -112 -92px
+  */
+}
+
+/* line 399, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: 0 -40px;
+  /* 
+  sprites locations 
+  light: 0 -40px, -20px -40px, -40px -40px, -60px -40px, 0 -112px, -20px -112px, -40px -112px
+  dark: -80px -40px, -100px -40px, -120px -40px, -140px -40px, -80px -112px, -100px -112px, -120px -112px
+  */
+}
+
+/* line 408, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: 0 -56px;
+  /* 
+  sprites locations 
+  light: 0 -56px, -20px -56px, -40px -56px, -60px -56px, 0 -128px, -20px -128px, -40px -128px
+  dark: -80px -56px, -100px -56px, -120px -56px, -140px -56px, -80px -128px, -100px -128px, -120px -128px
+  */
+}
+
+/* line 420, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_buttonUp:hover,
+.mCSB_scrollTools .mCSB_buttonDown:hover,
+.mCSB_scrollTools .mCSB_buttonLeft:hover,
+.mCSB_scrollTools .mCSB_buttonRight:hover {
+  opacity: 0.75;
+  filter: "alpha(opacity=75)";
+  -ms-filter: "alpha(opacity=75)";
+}
+
+/* line 425, ../../app/sass/template/_mCustomScrollbar.scss */
+.mCSB_scrollTools .mCSB_buttonUp:active,
+.mCSB_scrollTools .mCSB_buttonDown:active,
+.mCSB_scrollTools .mCSB_buttonLeft:active,
+.mCSB_scrollTools .mCSB_buttonRight:active {
+  opacity: 0.9;
+  filter: "alpha(opacity=90)";
+  -ms-filter: "alpha(opacity=90)";
+}
+
+/* ---------------------------------------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 963px) and (orientation: portrait), only screen and (min-width: 768px) and (max-width: 963px) {
+  /* line 3, ../../app/sass/layout/_tablet.scss */
+  .header, .main, .bg_img, .main_steps, .main_evolution, .main_ejemplosKps, .footer_contact,
+  .header_idioma, .header_logo, .footer, .carousel {
+    width: 92%;
+  }
+
+  /* line 5, ../../app/sass/layout/_tablet.scss */
+  .disNoneTablet {
+    display: none;
+  }
+
+  /**********************
+  ******** FOOTER *******
+  **********************/
+  /* line 10, ../../app/sass/layout/_tablet.scss */
+  .footer .imgGb {
+    height: 6.5em;
+  }
+
+  /**********************
+  ******** CAROUSEL *******
+  **********************/
+  /* line 16, ../../app/sass/layout/_tablet.scss */
+  .colTexto {
+    width: 40%;
+  }
+
+  /* line 19, ../../app/sass/layout/_tablet.scss */
+  .textoCarousel_home p {
+    font-size: 1.8em;
+  }
+
+    /**********************
+	****** PARTICIPA ******
+	**********************/
+  /* line 27, ../../app/sass/layout/_tablet.scss */
+  .wrapper_participa .titulo1 {
+    font-size: 2.2em;
+  }
+
+  /**********************
+  ** MENé DESPLEGABLE ***
+  **********************/
+  /* line 32, ../../app/sass/layout/_tablet.scss */
+  .menu_desplegable {
+    display: block;
+  }
+
+  /**********************
+  ********* LOGO ********
+  **********************/
+  /* line 38, ../../app/sass/layout/_tablet.scss */
+  .logoEEEJ_garantia_juvenil {
+    display: none;
+    visibility: hidden;
+    height: 0;
+  }
+
+  /* line 43, ../../app/sass/layout/_tablet.scss */
+  .logoEEEJ_garantia_juvenil_peque {
+    display: block;
+    height: 8em;
+    visibility: visible;
+    padding-top: 2.3em;
+    padding-bottom: 2.3em;
+  }
+
+  /* line 50, ../../app/sass/layout/_tablet.scss */
+  .titulo_logo {
+    width: 165px;
+    font-size: 1.4em;
+  }
+
+  /* line 56, ../../app/sass/layout/_tablet.scss */
+  .relevants {
+    margin-left: 0;
+  }
+  /* line 57, ../../app/sass/layout/_tablet.scss */
+  .relevants .relevant {
+    float: right;
+  }
+  /* line 58, ../../app/sass/layout/_tablet.scss */
+  .relevants .relevant.first {
+    float: left;
+  }
+  /* line 59, ../../app/sass/layout/_tablet.scss */
+  .relevants .relevant .relevant_information {
+    margin-left: 0.9em;
+  }
+
+  /* line 63, ../../app/sass/layout/_tablet.scss */
+  .aside {
+    margin-left: 0;
+  }
+
+  /* line 64, ../../app/sass/layout/_tablet.scss */
+  .download_area {
+    margin-left: 0;
+    margin-bottom: 2.2em;
+    background: none;
+  }
+  /* line 68, ../../app/sass/layout/_tablet.scss */
+  .download_area .download_content {
+    height: 250px;
+    max-height: 250px;
+  }
+  /* line 71, ../../app/sass/layout/_tablet.scss */
+  .download_area .download_content.dc_large {
+    max-height: 250px;
+  }
+
+  /* line 76, ../../app/sass/layout/_tablet.scss */
+  .twitter_area {
+    float: right;
+  }
+  /* line 79, ../../app/sass/layout/_tablet.scss */
+  .twitter_area .twitter_content {
+    height: 260px;
+  }
+  /* line 81, ../../app/sass/layout/_tablet.scss */
+  .twitter_area .twitter_content.tw-large {
+    height: 260px;
+  }
+
+  /* line 86, ../../app/sass/layout/_tablet.scss */
+  .faq {
+    margin-left: 0;
+    margin-bottom: 2em;
+  }
+  /* line 87, ../../app/sass/layout/_tablet.scss */
+  .faq > a {
+    background-position: 37% 5px;
+    padding: 0.75em 37%;
+  }
+
+  /* line 91, ../../app/sass/layout/_tablet.scss */
+  .links_area {
+    display: none;
+  }
+
+  /* line 97, ../../app/sass/layout/_tablet.scss */
+  .titulo_descarga.download {
+    background: url(../imagenes/img/sprite/download_area.png) no-repeat 25px 16px;
+  }
+
+  /* line 101, ../../app/sass/layout/_tablet.scss */
+  .enlace_desplegar_menu img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* line 106, ../../app/sass/layout/_tablet.scss */
+  .enlace_desple_menu {
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+  }
+  /* line 107, ../../app/sass/layout/_tablet.scss */
+  .enlace_desple_menu .centrar_desplegar_menu {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  /* line 115, ../../app/sass/layout/_tablet.scss */
+  .enlace_desple_menu.is-selected {
+    background: #454545;
+  }
+
+  /* line 119, ../../app/sass/layout/_tablet.scss */
+  .content_desplegable {
+    z-index: 10;
+    left: -16px;
+    margin-left: 10%;
+    display: none;
+    position: absolute;
+    background: white;
+    width: 88%;
+    background: #454545;
+  }
+  /* line 128, ../../app/sass/layout/_tablet.scss */
+  .content_desplegable .menu {
+    padding-top: 2em;
+    background: #454545;
+  }
+  /* line 131, ../../app/sass/layout/_tablet.scss */
+  .content_desplegable .menu ul {
+    padding: 0em 1em;
+    text-align: left;
+  }
+  /* line 134, ../../app/sass/layout/_tablet.scss */
+  .content_desplegable .menu ul li {
+    padding: 1em;
+    display: block;
+    width: auto;
+    text-align: left;
+    border-top: 1px solid #7c7c7c;
+    border-left: 0px solid #999999;
+  }
+  /* line 141, ../../app/sass/layout/_tablet.scss */
+  .content_desplegable .menu ul li.first {
+    border-top: 1px solid #e5e5e5;
+  }
+  /* line 142, ../../app/sass/layout/_tablet.scss */
+  .content_desplegable .menu ul li.last {
+    border-bottom: 1px solid #999999;
+  }
+  /* line 143, ../../app/sass/layout/_tablet.scss */
+  .content_desplegable .menu ul li a {
+    color: #cccccc;
+    font-size: 1.6em;
+  }
+  /* line 148, ../../app/sass/layout/_tablet.scss */
+  .content_desplegable .menu ul li.active {
+    background: #454545;
+  }
+  /* line 152, ../../app/sass/layout/_tablet.scss */
+  .content_desplegable .menu .cabeceraCentrado {
+    width: auto;
+    margin-bottom: 2em;
+  }
+  /* line 154, ../../app/sass/layout/_tablet.scss */
+  .content_desplegable .idiomasDesple {
+    display: none;
+  }
+  /* line 155, ../../app/sass/layout/_tablet.scss */
+  .content_desplegable .idiomasDesple, .content_desplegable .catalogo_medidas {
+    background: #454545;
+  }
+  /* line 157, ../../app/sass/layout/_tablet.scss */
+  .content_desplegable .idiomasDesple ul, .content_desplegable .catalogo_medidas ul {
+    text-align: left;
+  }
+  /* line 159, ../../app/sass/layout/_tablet.scss */
+  .content_desplegable .idiomasDesple ul li, .content_desplegable .catalogo_medidas ul li {
+    display: block;
+    padding: 1em 0;
+  }
+  /* line 162, ../../app/sass/layout/_tablet.scss */
+  .content_desplegable .idiomasDesple ul li a, .content_desplegable .catalogo_medidas ul li a {
+    color: #cccccc;
+    font-size: 1.6em;
+  }
+  /* line 169, ../../app/sass/layout/_tablet.scss */
+  .content_desplegable .catalogo_medidas {
+    margin: 2em 0em;
+    margin-top: 0;
+    padding: 0 2em;
+    font-family: "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  }
+  /* line 174, ../../app/sass/layout/_tablet.scss */
+  .content_desplegable .catalogo_medidas ul li {
+    border-top: 1px solid #786718;
+  }
+  /* line 176, ../../app/sass/layout/_tablet.scss */
+  .content_desplegable .catalogo_medidas ul li.last {
+    border-bottom: 1px solid #786718;
+  }
+  /* line 177, ../../app/sass/layout/_tablet.scss */
+  .content_desplegable .catalogo_medidas ul li a {
+    color: #ffcc00;
+    font-size: 1.6em;
+  }
+}
+@media only screen and (max-device-width: 320px), only screen and (max-width: 767px) {
+  /* line 3, ../../app/sass/layout/_mobile.scss */
+  .header, .main, .bg_img, .main_steps, .main_evolution, .main_ejemplosKps, .footer_contact,
+  .header_idioma, .header_logo, .footer, .carousel {
+    width: 95%;
+  }
+
+  /* line 5, ../../app/sass/layout/_mobile.scss */
+  .ftr_Mobile {
+    float: right;
+  }
+
+  /* line 6, ../../app/sass/layout/_mobile.scss */
+  .ftl_Mobile {
+    float: left;
+  }
+
+  /* line 8, ../../app/sass/layout/_mobile.scss */
+  .disNoneMobile {
+    display: none;
+  }
+
+  /* line 9, ../../app/sass/layout/_mobile.scss */
+  .accesibilidadMobile {
+    position: absolute !important;
+    left: -9999em;
+    width: 0.0625em;
+    height: 0.0625em;
+    overflow: hidden;
+    margin: 0em;
+    padding: 0em;
+    line-height: 0em;
+  }
+
+  /* line 10, ../../app/sass/layout/_mobile.scss */
+  .quitarAccesibilidadMobile {
+    position: relative !important;
+    left: 0;
+    width: auto;
+    height: auto;
+    line-height: auto;
+  }
+
+  /* line 12, ../../app/sass/layout/_mobile.scss */
+  .centrarMobileTextAlign {
+    text-align: center;
+  }
+
+  /* line 15, ../../app/sass/layout/_mobile.scss */
+  .wrapper_participa .tituloCarousel {
+    text-align: left;
+  }
+  /* line 18, ../../app/sass/layout/_mobile.scss */
+  .wrapper_participa .entidadesAdheridas,
+  .wrapper_participa .participanTotalidad {
+    display: block;
+    font-size: 1.9em;
+  }
+  /* line 23, ../../app/sass/layout/_mobile.scss */
+  .wrapper_participa .participanTotalidad {
+    color: #006699;
+  }
+
+  /* line 28, ../../app/sass/layout/_mobile.scss */
+  .wrapper_informacion {
+    margin-bottom: 0;
+  }
+  /* line 30, ../../app/sass/layout/_mobile.scss */
+  .wrapper_informacion .elemento_centrado.tipo2 {
+    width: 97px;
+    height: 76px;
+  }
+  /* line 34, ../../app/sass/layout/_mobile.scss */
+  .wrapper_informacion .titulo20 strong.tipo2 {
+    font-size: 1.3em;
+  }
+  /* line 37, ../../app/sass/layout/_mobile.scss */
+  .wrapper_informacion .bocadilloPreguntas {
+    margin-left: 0%;
+  }
+
+  /* line 39, ../../app/sass/layout/_mobile.scss */
+  .box_content {
+    padding-left: 1.5em;
+  }
+
+  /* line 42, ../../app/sass/layout/_mobile.scss */
+  .links_area {
+    display: none;
+  }
+
+  /* line 46, ../../app/sass/layout/_mobile.scss */
+  .footer {
+    padding-top: 1em;
+    min-height: 85em;
+  }
+  /* line 50, ../../app/sass/layout/_mobile.scss */
+  .footer .imgGb {
+    margin-bottom: 1em;
+  }
+  /* line 51, ../../app/sass/layout/_mobile.scss */
+  .footer .contenidoTexto {
+    padding-top: 1em;
+  }
+  /* line 53, ../../app/sass/layout/_mobile.scss */
+  .footer .contenidoTexto p, .footer .contenidoTexto ul {
+    padding-left: 1em;
+  }
+  /* line 55, ../../app/sass/layout/_mobile.scss */
+  .footer .siguenos {
+    padding-top: 0;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  /* line 59, ../../app/sass/layout/_mobile.scss */
+  .footer .siguenos p {
+    padding-top: 1em;
+    padding-left: 0.5em;
+    border-top: solid 1px;
+    padding-right: 1em;
+  }
+  /* line 66, ../../app/sass/layout/_mobile.scss */
+  .footer .twitterMobileCentrado {
+    margin: 0 auto;
+    width: 42px;
+    height: 37px;
+  }
+
+  /* line 73, ../../app/sass/layout/_mobile.scss */
+  .cookies {
+    padding: 1.5em 0.6em;
+  }
+
+  /* line 76, ../../app/sass/layout/_mobile.scss */
+  .swiper-container--home {
+    height: 18.5em;
+  }
+  /* line 78, ../../app/sass/layout/_mobile.scss */
+  .swiper-container--home .colTexto {
+    width: 76%;
+  }
+  /* line 81, ../../app/sass/layout/_mobile.scss */
+  .swiper-container--home .textoCarousel_home {
+    margin-left: 19.7%;
+  }
+  /* line 83, ../../app/sass/layout/_mobile.scss */
+  .swiper-container--home .textoCarousel_home p {
+    padding-bottom: 20px;
+  }
+  /* line 85, ../../app/sass/layout/_mobile.scss */
+  .swiper-container--home .textoCarousel_home p strong {
+    line-height: 20px;
+    font-size: 1em;
+  }
+  /* line 91, ../../app/sass/layout/_mobile.scss */
+  .swiper-container--home .textoCarousel_home .btnCarousel .btn {
+    margin-left: 0;
+    font-size: 1.4em !important;
+  }
+  /* line 96, ../../app/sass/layout/_mobile.scss */
+  .swiper-container--home .pagination {
+    left: 22.5%;
+  }
+  /* line 97, ../../app/sass/layout/_mobile.scss */
+  .swiper-container--home .carousel_control_pp {
+    left: 24%;
+  }
+
+  /* line 100, ../../app/sass/layout/_mobile.scss */
+  a.logo_gde {
+    margin-top: 1.5em;
+  }
+
+  /* line 101, ../../app/sass/layout/_mobile.scss */
+  img.logo_gde {
+    width: 168px;
+    height: 43px;
+  }
+
+  /* line 105, ../../app/sass/layout/_mobile.scss */
+  .logoEEEJ_garantia_juvenil {
+    display: none;
+  }
+
+  /* line 108, ../../app/sass/layout/_mobile.scss */
+  .logoEEEJ_garantia_juvenil_peque {
+    display: block;
+    width: 50px;
+    height: 40px;
+    padding-left: 1em;
+    visibility: visible;
+  }
+
+  /* line 115, ../../app/sass/layout/_mobile.scss */
+  .menu_desplegable {
+    display: block;
+  }
+
+  /* line 118, ../../app/sass/layout/_mobile.scss */
+  .enlace_desple_menu {
+    padding-top: 2.5em;
+    padding-bottom: 2em;
+  }
+  /* line 119, ../../app/sass/layout/_mobile.scss */
+  .enlace_desple_menu .centrar_desplegar_menu {
+    width: 32px;
+    height: 26px;
+    margin: 0 auto;
+  }
+  /* line 127, ../../app/sass/layout/_mobile.scss */
+  .enlace_desple_menu.is-selected {
+    background: #454545;
+  }
+
+  /* line 131, ../../app/sass/layout/_mobile.scss */
+  .content_desplegable {
+    z-index: 10;
+    left: 0px;
+    margin-left: 10%;
+    display: none;
+    position: absolute;
+    background: white;
+    width: 88%;
+    background: #454545;
+  }
+  /* line 140, ../../app/sass/layout/_mobile.scss */
+  .content_desplegable .menu {
+    background: #454545;
+  }
+  /* line 142, ../../app/sass/layout/_mobile.scss */
+  .content_desplegable .menu ul {
+    padding: 0em 1em;
+    text-align: left;
+  }
+  /* line 145, ../../app/sass/layout/_mobile.scss */
+  .content_desplegable .menu ul li {
+    padding: 1em;
+    display: block;
+    width: auto;
+    text-align: left;
+    border-top: 1px solid #7c7c7c;
+    border-left: 0px solid #999999;
+  }
+  /* line 152, ../../app/sass/layout/_mobile.scss */
+  .content_desplegable .menu ul li.first {
+    border-top: 1px solid #e5e5e5;
+  }
+  /* line 153, ../../app/sass/layout/_mobile.scss */
+  .content_desplegable .menu ul li.last {
+    border-bottom: 1px solid #999999;
+  }
+  /* line 154, ../../app/sass/layout/_mobile.scss */
+  .content_desplegable .menu ul li a {
+    color: #cccccc;
+    font-size: 1.2em;
+  }
+  /* line 159, ../../app/sass/layout/_mobile.scss */
+  .content_desplegable .menu ul li.active {
+    background: #454545;
+  }
+  /* line 163, ../../app/sass/layout/_mobile.scss */
+  .content_desplegable .menu .cabeceraCentrado {
+    width: auto;
+    margin-bottom: 2em;
+  }
+  /* line 165, ../../app/sass/layout/_mobile.scss */
+  .content_desplegable .idiomasDesple, .content_desplegable .catalogo_medidas {
+    background: #454545;
+  }
+  /* line 167, ../../app/sass/layout/_mobile.scss */
+  .content_desplegable .idiomasDesple ul, .content_desplegable .catalogo_medidas ul {
+    text-align: left;
+  }
+  /* line 169, ../../app/sass/layout/_mobile.scss */
+  .content_desplegable .idiomasDesple ul li, .content_desplegable .catalogo_medidas ul li {
+    display: block;
+    padding: 1em 0;
+  }
+  /* line 172, ../../app/sass/layout/_mobile.scss */
+  .content_desplegable .idiomasDesple ul li a, .content_desplegable .catalogo_medidas ul li a {
+    color: #cccccc;
+    font-size: 1.2em;
+  }
+  /* line 179, ../../app/sass/layout/_mobile.scss */
+  .content_desplegable .catalogo_medidas {
+    margin: 2em 0em;
+    padding: 0 2em;
+    font-family: "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  }
+  /* line 183, ../../app/sass/layout/_mobile.scss */
+  .content_desplegable .catalogo_medidas ul li {
+    border-top: 1px solid #786718;
+    padding: 0.5em 0;
+  }
+  /* line 186, ../../app/sass/layout/_mobile.scss */
+  .content_desplegable .catalogo_medidas ul li.last {
+    border-bottom: 1px solid #786718;
+  }
+  /* line 187, ../../app/sass/layout/_mobile.scss */
+  .content_desplegable .catalogo_medidas ul li a {
+    color: #ffcc00;
+  }
+
+  /* line 194, ../../app/sass/layout/_mobile.scss */
+  .titulo1 {
+    font-size: 2em;
+  }
+
+  /* line 196, ../../app/sass/layout/_mobile.scss */
+  .relevants {
+    margin-left: 0;
+  }
+  /* line 197, ../../app/sass/layout/_mobile.scss */
+  .relevants .relevant {
+    min-height: 0;
+    margin-left: 0;
+    margin-bottom: 1.5em;
+  }
+  /* line 198, ../../app/sass/layout/_mobile.scss */
+  .relevants .relevant > img {
+    width: 100%;
+  }
+
+  /* line 202, ../../app/sass/layout/_mobile.scss */
+  .aside {
+    margin-left: 0;
+  }
+
+  /* line 203, ../../app/sass/layout/_mobile.scss */
+  .download_area {
+    margin-left: 0;
+    background: none;
+  }
+  /* line 207, ../../app/sass/layout/_mobile.scss */
+  .download_area .download_content {
+    max-height: 200px;
+  }
+  /* line 209, ../../app/sass/layout/_mobile.scss */
+  .download_area .download_content.dc_large {
+    max-height: 200px;
+  }
+
+  /* line 214, ../../app/sass/layout/_mobile.scss */
+  .twitter_area {
+    margin-left: 0;
+  }
+  /* line 217, ../../app/sass/layout/_mobile.scss */
+  .twitter_area .twitter_content {
+    height: 210px;
+  }
+  /* line 219, ../../app/sass/layout/_mobile.scss */
+  .twitter_area .twitter_content.tw-large {
+    height: 210px;
+  }
+
+  /* line 224, ../../app/sass/layout/_mobile.scss */
+  .faq {
+    margin-left: 0;
+    margin-bottom: 2em;
+  }
+  /* line 225, ../../app/sass/layout/_mobile.scss */
+  .faq > a {
+    background-position: 24% 5px;
+    padding: 0.75em 34%;
+  }
+
+  /* line 229, ../../app/sass/layout/_mobile.scss */
+  .login_area ul li {
+    margin-left: 0;
+  }
+
+  /* line 232, ../../app/sass/layout/_mobile.scss */
+  .login_area ul li:last-child {
+    margin-top: 1em;
+  }
+
+  /* line 235, ../../app/sass/layout/_mobile.scss */
+  .login_area ul li input.login {
+    margin-top: 0.7em;
+  }
+
+  /* line 238, ../../app/sass/layout/_mobile.scss */
+  .login_area ul li label {
+    margin-top: 0.5em;
+  }
+
+  /* line 241, ../../app/sass/layout/_mobile.scss */
+  .login_method_area {
+    padding-right: 1em;
+  }
+  /* line 243, ../../app/sass/layout/_mobile.scss */
+  .login_method_area ul {
+    margin-left: 0;
+  }
+  /* line 246, ../../app/sass/layout/_mobile.scss */
+  .login_method_area ul p a {
+    display: block;
+  }
+  /* line 249, ../../app/sass/layout/_mobile.scss */
+  .login_method_area ul p a + a {
+    margin-top: 0.5em;
+  }
+
+  /* line 255, ../../app/sass/layout/_mobile.scss */
+  .links_area {
+    padding-left: 3em;
+  }
+
+  /******************
+  ****** VIDEO ******
+  ******************/
+  /* line 262, ../../app/sass/layout/_mobile.scss */
+  .video {
+    height: 199px;
+  }
+}
+/*Moviles landscape________________________________________________________________________*/
+@media only screen and (max-width: 480px) {
+  /* line 270, ../../app/sass/layout/_mobile.scss */
+  .login_area ul li {
+    display: block;
+    float: none;
+  }
+
+  /* line 274, ../../app/sass/layout/_mobile.scss */
+  .ccaa-list {
+    display: none;
+  }
+
+  /* line 277, ../../app/sass/layout/_mobile.scss */
+  .ccaa-select {
+    display: block;
+  }
+}
+/*Moviles portrait________________________________________________________________________*/
+@media only screen and (max-width: 320px) {
+  /* line 286, ../../app/sass/layout/_mobile.scss */
+  .header, .main, .main_steps, .footer_contact, .footer {
+    min-width: 300px;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  	/**********************
+	******** CAROUSEL *******
+	**********************/
+  /* line 294, ../../app/sass/layout/_mobile.scss */
+  .swiper-container--home .colTexto {
+    width: 50%;
+  }
+  /* line 297, ../../app/sass/layout/_mobile.scss */
+  .swiper-container--home .carousel_control_pp {
+    left: 49%;
+  }
+  /* line 300, ../../app/sass/layout/_mobile.scss */
+  .swiper-container--home .pagination {
+    left: 48.1%;
+  }
+}
+/*****************************************************************************************************
+ * IE 9
+ ****************************************************************************************************/
+/* line 6, ../../app/sass/layout/_ie.scss */
+.ie9 .textoCarousel_home {
+  margin-right: 0px;
+}
+
+/*****************************************************************************************************
+ * IE 8
+ ****************************************************************************************************/
+/* line 14, ../../app/sass/layout/_ie.scss */
+.ie8 .download_area {
+  float: none;
+}
+/* line 15, ../../app/sass/layout/_ie.scss */
+.ie8 .element_logoEEEJ_garantia_juvenil {
+  width: 50%;
+  float: right;
+}
+/* line 18, ../../app/sass/layout/_ie.scss */
+.ie8 .textoCarousel_home .btnCarousel {
+  margin-bottom: 23px;
+}
+/* line 20, ../../app/sass/layout/_ie.scss */
+.ie8 .textoCarousel_home.tipo2 .btnCarousel {
+  margin-bottom: 29px;
+}
+/* line 24, ../../app/sass/layout/_ie.scss */
+.ie8 .textoCarousel_home {
+  margin-right: 0px;
+}
+
+.labelGuardar{
+	font-style:oblique;
+}
+
+
+/*--PDF--*/
+img.pdf32{
+	width: auto !important;
+	height: 32px !important;
+}
+
+img.pdf128{
+	width: auto !important;
+	height: 128px !important;
+	margin-right: 2%;
+}
+
+img.pdf64{
+	width: auto !important;
+	height: 64px !important;
+	margin-right: 2%;
+}
+
+
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  color: #666666;
+  padding-right: 0.5em;
+}
+
+
+.camposEnColumna{display:block;overflow:hidden;width:100%;clear:both;padding-top: 5px;padding-bottom: 5px}
+.camposEnColumna div.camposEnBloque{float:left;margin-right:5px;width:auto}
+.camposEnColumna div.camposEnBloque label{width:auto; line-height: 1.4em;}
+.camposEnColumna div.camposEnBloque label.label2{width:auto; margin-left:30%}
+.camposEnColumna div.camposEnLinea{float:left;margin-right:5px}
+.camposEnColumna div.camposEnLinea label{font-size:1em}
+.camposEnColumna div.camposEtiquetaSuperior {width: auto; display: inline-block;}
+.camposEnColumna div.camposEtiquetaSuperior label{width: auto;display: block;}
+
+
+/*  LOGIN */
+
+/* line 134, ../../app/sass/layout/_layout.scss */
+.box_content {
+  padding: 1em 4em 1em 3.3em;
+  margin-bottom: 3.3em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* line 138, ../../app/sass/layout/_layout.scss */
+.box_content h3 {
+  color: #990000;
+  font-size: 1.8em;
+}
+/* line 142, ../../app/sass/layout/_layout.scss */
+.box_content p {
+  font-size: 1.2em;
+  padding: 1em 0;
+}
+/* line 146, ../../app/sass/layout/_layout.scss */
+.box_content a {
+  color: #006699;
+  text-decoration: underline;
+}
+
+/* line 146, ../../app/sass/layout/_layout.scss */
+.box_content a {
+  color: #006699;
+  text-decoration: underline;
+}
+
+/* line 152, ../../app/sass/layout/_layout.scss */
+.image_area {
+  margin-top: 2.5em;
+  text-align: center;
+}
+
+/* line 156, ../../app/sass/layout/_layout.scss */
+.login_area {
+  padding-right: 0;
+}
+/* line 158, ../../app/sass/layout/_layout.scss */
+.login_area ul {
+  margin-top: 1.6em;
+  margin-bottom: 2em;
+  overflow: hidden;
+}
+/* line 5, ../../app/sass/layout/_mixins.scss */
+.login_area ul:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+} 
+/* line 162, ../../app/sass/layout/_layout.scss */
+.login_area ul li {
+  display: inline;
+  float: left;
+  margin-left: 1.9em;
+}
+/* line 166, ../../app/sass/layout/_layout.scss */
+.login_area ul li label {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+/* line 172, ../../app/sass/layout/_layout.scss */
+.login_area ul li input.login {
+  width: 13.2em;
+  padding: 0.6em 0;
+  margin-top: 0.3em;
+  margin-right: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+}
+/* line 183, ../../app/sass/layout/_layout.scss */
+.login_area ul li:first-child {
+  margin-left: 19px;
+}
+/* line 187, ../../app/sass/layout/_layout.scss */
+/* .login_area a { */
+/*   display: inline-block; */
+/*   padding-right: 2em; */
+/*   font-family: Arial, Helvetica, sans-serif; */
+/*   font-size: 1.2em; */
+/*   margin-top: 0.5em; */
+/* } */
+
+/* line 196, ../../app/sass/layout/_layout.scss */
+.login_method_area {
+  padding-right: 10em;
+}
+/* line 198, ../../app/sass/layout/_layout.scss */
+.login_method_area ul {
+  margin-left: 3.8em;
+}
+/* line 200, ../../app/sass/layout/_layout.scss */
+.login_method_area ul p {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0;
+  font-weight: bold;
+}
+/* line 205, ../../app/sass/layout/_layout.scss */
+.login_method_area ul p a {
+  margin-right: 1em;
+}
+/* line 210, ../../app/sass/layout/_layout.scss */
+.login_method_area .ico {
+  height: 5.9em;
+  padding-left: 8em;
+  display: table;
+}
+/* line 215, ../../app/sass/layout/_layout.scss */
+.login_method_area .ico-dni-elec {
+  background: url("../img/ico-dni-electronico.png") no-repeat 0 center;
+}
+/* line 218, ../../app/sass/layout/_layout.scss */
+.login_method_area .ico-certi-elec {
+  background: url("../img/ico-certificado-electronico.png") no-repeat 4% center;
+}
+/* line 221, ../../app/sass/layout/_layout.scss */
+.login_method_area .ico-usuario {
+  background: url("../img/ico-usuario.png") no-repeat 5% center;
+}
+
+/* line 283, ../../app/sass/layout/_layout.scss */
+.markedAreaLight {
+  background-color: #f6f5e8;
+}
+
+.cuerpoLogin {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  padding-top: 0;
+  width: 400px;
+}
+ 
+.contenedorLogin
+{
+	text-align: left;
+	margin: auto;	
+}
+  
+.contenedorLoginAcceso
+{
+	text-align: center;
+	margin: auto;	
+}
+
+.contenedorLoginIzq
+{
+	width: 450px;
+	float:left;	
+	min-height: 270px;
+}
+
+.contenedorLoginDer
+{
+	margin-left: 470px;
+}
+.contenedorLoginDer .login_area
+{
+	min-height: 270px;
+}
+
+.contenedorLoginDer .login_area
+{
+	min-height: 270px;
+}
+
+.errorLogin
+{
+    font-family: Arial, Helvetica, sans-serif;
+	color: red; 
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.versionDiv
+{
+	text-align: right;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#333333;
+}
+.btn-refrescar-kaptcha {
+	background-image: url(../imagenes/botonKaptcha.png);
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px; 
+	/**padding-top:4px;**/
+	cursor: pointer;
+	border: 0;
+	color: #000000;
+}
+.captcha{
+	display: inline-block;
+	float: left;
+}
+.estiloCaptcha{
+	padding-bottom: 70px;
+}
+.recargarCaptchaBoton{
+	padding-right: 0.5em;
+	margin-top: 1em;
+	float: left;
+	display: inline-block;
+}
+.divCaptcha{
+	margin-left: 32em;
+}
+.captchaAcceso {
+	margin-bottom: 1em;
+	padding: 1em;
+}
+.captchaAcceso .divCaptcha{
+	margin-left: 5em;
+}

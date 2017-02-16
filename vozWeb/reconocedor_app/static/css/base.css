@@ -1,0 +1,215 @@
+html{
+	min-height: 100%;
+	position: relative;
+}
+body{
+	background-color:#ddd;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #333333;
+    margin: 0;
+  	margin-bottom: 140px;
+}
+.container{
+	width: 100%;
+    background-color: white;
+    border-color: white;
+    margin: 0px;
+}
+
+#navBar{
+	width: 100%;
+}
+
+.region-header-plx {
+    float: left;
+    padding: 8px;
+    width: 100%;
+}
+
+#separadorGris{
+	width: 100%;
+    background-color: #636363;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#tabla{
+	margin-top: 80px;
+}
+
+#infoLogo{
+	height: 25px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#imgEverisBlanco{
+    width: 100px;
+    margin-left: 40px;
+}
+
+#redesLogo{
+	width: 200px;
+    height: 100px;
+}
+
+#footer{
+	height: 100px;
+	background-color: #505050;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+h1{	
+    color: #9aae04;
+    float: left;
+    font-size: 26px;
+}
+
+#loader{
+	margin: 0px auto;
+    position: relative;
+    top: calc(50% - 10px);
+    left: calc(50% - 240px);
+    width: 100px;
+    float: left;
+}
+
+#imgEveris{
+    width: 125px;
+    float: right;
+    position: relative;
+}
+
+#wrapContainer{
+	width: 80%;
+    background-color: white;
+    border-color: white;
+    width: 80%;
+    background-color: white;
+    border-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fff;
+    border-radius: .5em;
+    margin: 1em auto;
+    max-width: 1170px;
+    padding: 1em 0;
+    position: relative;
+    -webkit-box-shadow: 0px 5px 10px 0px #333;
+    -moz-box-shadow: 0px 5px 10px 0px #333;
+    box-shadow: 0px 5px 10px 0px #333;
+}
+
+.jumbotron{
+	background-image: url(images/logo_everis.png);
+	
+}
+
+.table-formacion{
+	margin-top:20px;
+	width:100%;	
+	margin-bottom:20px;
+	border:1px solid #737373;
+	border-collapse: collapse;
+}
+
+.table-formacion th{
+	padding:5px;
+	background: #737373;
+	color:#f0efef;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.table-formacion th label{
+	color:#f0efef;
+	font-weight:bold;
+}
+
+.table-formacion td{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.3em;
+	padding:5px;
+	color: #666666;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.table-formacion td label {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.0em;
+	padding:5px;
+	color: #666666;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.mas_detalle{
+width:40; 
+height: 40;
+}
+
+
+#imagen_everis{
+	height: 150px;
+	
+}
+#contenedor_imagen_everis{
+	position: absolute;
+	
+}
+
+#linea_final{
+	height:2px;
+	width:100%;
+	background-color:#C5C5C5;
+	
+}
+
+#consulta{
+padding: 10px;
+width: 220px;
+border-radius: 10px;
+background-color: #f80;
+font-family: "trebuchet ms", tahoma, verdana, sans-serif;
+font-size: 2.4em;
+}
+
+#triangulo{
+width: 0;
+height: 0;
+border-bottom: 30px solid #55f;
+border-right: 20px solid transparent;
+border-left: 20px solid transparent;
+}
+
+#consulta:before {
+content:"";
+position: absolute;
+width: 0;
+height: 0;
+border-top: 20px solid transparent;
+border-right: 30px solid #f80;
+border-bottom: 20px solid transparent;
+margin: 10px 0 0 ­32px;
+}
+
+#img-masinfo{
+width:40; 
+height: 40;
+}
+
+
+.dataTables_wrapper{
+	width: 99%!important;
+    position: relative!important;
+    left: calc( 100% - 99.5%)!important;
+}
