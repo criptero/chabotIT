@@ -68,7 +68,6 @@ body{
 h1{	
     color: #9aae04;
     float: left;
-    font-size: 26px;
 }
 
 #loader{
@@ -209,7 +208,7 @@ height: 40;
 
 
 .dataTables_wrapper{
-	width: 99%!important;
+    width: 95%!important;
     position: relative!important;
-    left: calc( 100% - 99.5%)!important;
+    left: calc( 100% - 97.5%)!important;
 }

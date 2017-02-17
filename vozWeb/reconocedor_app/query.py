@@ -14,8 +14,8 @@ def make_sql_sentence(sql_sentence):
 			for row in cursor:
 				resultRow = []
 				resultRow.append("<a  target='_blank' href='"+row[3].decode("utf-8")+"'>"+row[0].decode("utf-8")+"</a>")
-				resultRow.append(row[1].decode("utf-8")+ " <img src='/static/images/sound.png' onclick='LeeDetalleOferta(\""+row[1].decode("utf-8")+"\")' style='width:20px;'>")
-				resultRow.append(row[2].decode("utf-8"))
+				resultRow.append(row[1].decode("utf-8")[0:200]+ "... <img src='/static/images/sound.png' onclick='LeeDetalleOferta(\""+row[1].decode("utf-8")+"\")' style='width:20px;'>")
+				resultRow.append(row[2].decode("utf-8")[0:200]+"...")
 				results.append(resultRow)
 		print " RESULTS : " + str(results)
 		return results

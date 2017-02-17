@@ -58,7 +58,7 @@ var tabla = undefined;
 		
 		// setup recognition
 		var finalTranscript = '';
-		var textoFijo = 'Has dicho... ';
+		var textoFijo = 'Los resultados de la búsqueda... ';
 		var recognizing = false;
 		var timeout;
 		var oldPlaceholder = null;

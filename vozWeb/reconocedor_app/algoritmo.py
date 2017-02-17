@@ -657,7 +657,7 @@ def query(string):
           
         resto = regex_resto.search(string)
 
-    query = '<query>select title, description, minRequirements, link from ofertasNuevo '
+    query = '<query>select title, description, minRequirements, link from ofertasVN '
     if string != " ":
         query = query + 'where ' + string
         query = query[:-4]
