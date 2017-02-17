@@ -184,6 +184,9 @@ var tabla = undefined;
 					texto = texto + tdsTabla2[i].textContent + ", ";
 				}				
 			}
+			video = document.getElementById("Video1");
+
+			video.play();
 			responsiveVoice.speak(texto, "Spanish Female", parametros2);
 			
 	

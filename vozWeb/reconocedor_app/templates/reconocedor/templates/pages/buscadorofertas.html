@@ -21,7 +21,6 @@
 		<input id="buscador" type="text" class="speech-input">
 		<link rel="stylesheet" href="{%static 'css/dataTables.jqueryui.min.css'%}" />
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="{% static 'js/voiceText.js'%}"></script>
 		<script src="{% static 'js/video.js'%}"></script>
 		<script src="{% static 'js/index.js'%}"></script>
 		<script src="{% static 'js/jquery.dataTables.js'%}"></script>
@@ -33,13 +32,14 @@
 	
 	
 	<div id="hablador">
-		<script src='https://code.responsivevoice.org/responsivevoice.js'></script>	
+		<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 	</div>
 
 	<div id="tabla">
 
 		<table id="data_table" class="display" cellspacing="0" width="100%"></table>
-	</div>
+</div>
+<script src="{% static 'js/voiceText.js'%}"></script>
 
 
 </div>
